@@ -3,7 +3,7 @@ header {
     justify-content: space-between;
     flex-direction: row;
     margin: 10px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 body {
@@ -43,30 +43,41 @@ header ul li {
 .login {
     margin-top: 40px;
     text-align: center;
+    margin-right: 20px;
 }
 
 .login img {
     width: 40px;
     height: 40px;
     margin-right: 25px;
-   
 }
 
 .login a {
-    
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-size: 25px;
-    margin-bottom: 20px;
     color: rgb(25, 24, 24);
-    font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 
 .login a:hover {
-    color: #cdf0e6;
     border-bottom: 2px solid #cce6df;
-    margin-top: 10px;
+    
+}
+
+.mbiheader{
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(197, 161, 114);
+}
+.mbiheader p{
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
 }
 
 #useri {
@@ -123,7 +134,7 @@ header ul li {
     text-align: center;
     font-size: 20px;
     margin-top: 80px;
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .fotografit {
@@ -131,14 +142,12 @@ header ul li {
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 50px;
-
 }
 
 .rubrika img {
     width: 100%;
     object-fit: cover;
     transition: .5s ease all;
-
 }
 
 .rubrika {
@@ -260,13 +269,11 @@ header ul li {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .shop-map-item {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 100px;
-
 }
 
 .site-desc-4 {
@@ -332,15 +339,12 @@ header ul li {
     width: 100%;
     height: 9px;
     background: linear-gradient(-45deg, #E3FF04, #FF0189);
-   
 }
 
 .Connections {
     display: flex;
     flex-direction: column;
     background-color: rgb(246, 246, 226);
-    /* padding: 0 20px; */
-    /* margin: 0px 10px; */
 }
 
 .text-images-instafeed {
@@ -348,7 +352,6 @@ header ul li {
     flex-direction: row;
     margin-top: 50px;
     margin-bottom: 50px;
-    
 }
 
 .images-c {
@@ -391,7 +394,6 @@ header ul li {
     justify-content: center;
     padding-left: 110px;
     flex-direction: column;
-    
 }
 
 .insta-feed h2{
@@ -412,7 +414,6 @@ header ul li {
 .footermain{
     background-color: rgb(54, 73, 54);
     margin-top: 60px;
-    
 }
     
 .mrenafooter{
