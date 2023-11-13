@@ -1,0 +1,135 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+  
+}
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+header ul li{
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(26, 23, 23);
+    text-decoration: none;
+    font-size: 20px;
+}
+.main-fillimi{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 230);
+    align-items:center;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+body{
+    margin: 20px;
+}
+button{
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    background-color: lightpink;
+    border: none;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    position: relative;
+}
+button:before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid black;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    transition: 0.8s;
+}
+button:after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid black;
+    border-bottom-color: black;
+    border-right-color: black;
+    transition:width 0.8s ease, height 0.8s ease;
+
+}
+button:hover::before,
+button:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 100px 100px 100x;
+}
+.column{
+    flex: 25%;
+    max-width: 25%;
+}
+.img-hover-zoom{
+    height: auto;
+    overflow: hidden;
+    border: 5px solid #ffff;
+}
+.img-hover-zoom img{
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: transform .5s ease;
+}
+.img-hover-zoom:hover img{
+    transform: scale(1.5);
+}
+@media screen and (max-width:800px){
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+    
+}
+@media screen and (max-width:500px){
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+    
+}
+section{
+    padding: 2rem 9%;
+}
+.home{
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    background-color:rgb(255, 255, 230) ;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.home.content {
+    max-width: 50rem;
+}
+.home.content h3{
+    max-width: 6rem;
+    color: #333;
+
+}
