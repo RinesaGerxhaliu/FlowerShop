@@ -1,3 +1,4 @@
+
 header{
     display: flex;
     justify-content: space-between;
@@ -116,20 +117,87 @@ section{
     padding: 2rem 9%;
 }
 .home{
-    font-style: italic;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     align-items: center;
-    background-color:rgb(255, 255, 230) ;
-    margin-left: 25px;
-    margin-right: 25px;
+    min-height: 100vh;  
+    background: url(https://img.freepik.com/premium-photo/there-is-pink-flower-arrangement-with-white-pink-flowers-generative-ai_902049-41593.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697328000&semt=ais) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .home.content {
     max-width: 50rem;
 }
 .home.content h3{
-    max-width: 6rem;
+    font-size: 6rem;
     color: #333;
+}
+.home.content span{
+    font-size: 3.5rem;
+    color: var(--pink);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.home.content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: row;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: rgb(255, 51, 153, 0.5);
+}
+.heading span{
+    color: var(--pink);
+}
+@media(max-width:450px) {
+    .heading{
+        font-size: 3rem;
+    }
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.about .row .video-container{
+    
+    flex:  10px;
+    position:static;
 
 }
+.about .row .video-container video{
+    width: 85%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    height: 100%;
+    object-fit: cover;
+
+}
+.about.row .video-container h3{
+    position: absolute;
+    top: 50%;
+    font-size: 3px ;
+    color: #333;
+    background: #fff;
+    width: 50%;
+    padding: 20px 10px;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+.about .row .content{
+    flex: 20px;
+}
+
+
