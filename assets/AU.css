@@ -191,13 +191,40 @@ section{
     font-size: 3px ;
     color: #333;
     background: #fff;
-    width: 50%;
-    padding: 20px 10px;
+    width: 120%;
+    padding: 10px 5px;
     text-align: center;
     mix-blend-mode: screen;
 }
 .about .row .content{
     flex: 20px;
 }
-
-
+.icon-i1{
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.icon-i1 .icons{
+    background: #fff;
+    border: .1rem solid rgb(0, 0, 0, .1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+.icon-i1 .icons img{
+    height: 5rem;
+    margin-right: 2rem;
+}
+.icon-i1 .icons h5{
+    color: #333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.icon-i1 .icons span{
+    color: #555;
+    font-size: 1.3rem;
+}
