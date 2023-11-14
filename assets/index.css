@@ -1,88 +1,89 @@
 header{
+ display: flex;
+ justify-content: space-between;
+ flex-direction: row;
+ margin: 10px;
+ margin-top: -4px;
+}
+body{
+    margin: 0;
+}
+.headeri{
+     margin: 25px;
+}
+
+ header ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /* padding: 30px; */
+  
+}
+
+header ul li{
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border-bottom: 2px solid rgb(234, 179, 188); */
+    color: rgb(26, 23, 23);  
+    text-decoration: none;
+}
+
+.listat a{
+    padding: 5px 0;
+    text-decoration: none;
+}
+
+.listat a:hover{
+    color: #cdf0e6;
+    border-bottom: 2px solid #cce6df; 
+}
+
+.login{
+    margin-top: 40px;
+}
+
+.login img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.login a:hover{
+    color: #cdf0e6;
+    border-bottom: 2px solid #cce6df; 
+    margin-top: 10px;
+}
+
+#useri{
+    width: 45px;
+    height: 30px;
+}
+
+.main-fillimi{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin: 10px;
-    margin-top: -4px;
-   }
-   body{
-       margin: 0;
-   }
-   .headeri{
-        margin: 25px;
-   }
+    background-color: rgb(255, 255, 230);
    
-    header ul{
-       display: flex;
-       flex-direction: row;
-       list-style: none;
-       /* padding: 30px; */
-     
-   }
-   
-   header ul li{
-       margin: 20px;
-       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-       /* border-bottom: 2px solid rgb(234, 179, 188); */
-       color: rgb(26, 23, 23);  
-       text-decoration: none;
-   }
-   
-   .listat a{
-       padding: 5px 0;
-       text-decoration: none;
-   }
-   
-   .listat a:hover{
-       color: #cdf0e6;
-       border-bottom: 2px solid #cce6df; 
-   }
-   
-   .login{
-       margin-top: 40px;
-   }
-   
-   .login img{
-       width: 30px;
-       height: 30px;
-       margin-right: 10px;
-   }
-   
-   .login a:hover{
-       color: #cdf0e6;
-       border-bottom: 2px solid #cce6df; 
-       margin-top: 10px;
-   }
-   
-   #useri{
-       width: 45px;
-       height: 30px;
-   }
-   
-   .main-fillimi{
-       display: flex;
-       justify-content: space-between;
-       flex-direction: row;
-       background-color: rgb(255, 255, 230);
-      
-   }
-   .site-desc{
-       width: 100%;
-       display: flex;
-       justify-content: center;
-       margin-left: 70px;
-       flex-direction: column;
-   }
-   .site-desc h2{
-       margin: 0   ;
-   }
-   .site-desc p{
-       margin: 10px 0   ;
-   }
-   .main-fillimi img{
-       width: 50%;
-   }
-   
-   .main-fillimi ul{
-       
-   }
+}
+.site-desc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+    flex-direction: column;
+}
+.site-desc h2{
+    margin: 0   ;
+}
+.site-desc p{
+    margin: 10px 0   ;
+}
+.main-fillimi img{
+    width: 50%;
+}
+
+.main-fillimi ul{
+    
+}
+

@@ -23,7 +23,7 @@ header ul li{
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
-    background-color:rgb(248, 200, 220);
+    background-color: rgb(255, 255, 230);
     align-items:center;
     font-style: italic;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
