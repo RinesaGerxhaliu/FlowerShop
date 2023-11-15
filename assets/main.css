@@ -79,3 +79,87 @@ header ul li {
     font-family: Arial, Helvetica, sans-serif;
     color: azure;
 }
+
+  .slider {
+    width: 100%;
+    height: 510px;
+    position: relative;
+  }
+
+  .slider img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transition: all 0.5s ease-in-out; */
+  }
+
+  .slider img:first-child {
+    z-index: 1;
+  }
+
+  .slider img:nth-child(2) {
+    z-index: 0;
+  }
+
+  .navigation-button {
+    text-align: center;
+    position: relative;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  .bestsell-collection{
+    background-color: rgb(237, 229, 219);
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    padding: 40px 0;
+    text-align: center;
+    /* margin-top: 20px; */
+  }
+
+  .bestsell-fotot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* margin-top: 50px; */
+    margin: 90px 90px;
+}
+
+  .imageshop img {
+    width: 100%;
+    object-fit: cover;
+    transition: .5s ease all;
+}
+
+.imageshop {
+    margin: 0 15px;
+    width: auto;
+    overflow: hidden;
+}
+
+.underimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    border-bottom: 1px solid rgb(189, 186, 186);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+  
