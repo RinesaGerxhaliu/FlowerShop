@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Shop</title>
     <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="script.js" defer></script>
 </head>
 <body>
+
     <div class="mbiheader">
         <p>Same day Aucland delivery orders placed before 1pm weekdays</p>
     </div>
@@ -30,40 +33,103 @@
 
    </header>
 
-   <main>
-
-    <div class="slider-container"> 
-
-        <div class="Slides">
-            <div class="numbertext">1 / 3</div>
-            <img src="./images/sliderphoto1.png"width:100%">
-            <div class="text">Flowers</div>
+      <main>
+        <div class="slider">
+            <img
+              id="img-1"
+              src="./images/sliderphoto3.pmg.avif"
+              alt="Image 1"
+            />
+            <img
+              id="img-2"
+              src="./images/sliderphoto4.png"
+              alt="Image 2"
+            />
+            <img
+              id="img-3"
+              src="./images/sliderphoto5.png"
+              alt="Image 3"
+            />
+          </div>
+          <div class="navigation-button">
+            <span class="dot active" onclick="changeSlide(0)"></span>
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick="changeSlide(2)"></span>
           </div>
 
-          <div class="Slides">
-            <div class="numbertext">2 / 3</div>
-            <img src="./images/sliderphoto4.png" style="width:100%">
-            <div class="text">Flowers</div>
+          <div class="bestsell-collection">
+           <p>Best Sellers Collection</p>
           </div>
 
-          <div class="Slides">
-            <div class="numbertext">3 / 3</div>
-            <img src="./images/sliderphoto5.png" style="width:100%">
-            <div class="text">Flowers</div>
+          <div class="bestsell-fotot">
+            <div class="imageshop">
+                <img src="./images/bestsell1.png" alt="" class="img1">
+                <div class="underimg">
+                    <p>The Vivienne Liberty Bouquet</p>
+                    <p id="cmimi">$42</p>
+                </div>
+            </div>
+
+            <div class="imageshop">
+                <img src="./images/bestsell2.png" alt="" class="img2">
+                <div class="underimg">
+                    <p>The Jojo</p>
+                    <p id="cmimi">$60</p>
+                </div>
+            </div>
+
+            <div class="imageshop">
+                <img src="./images/bestsell3.png" alt="" class="img3">
+                <div class="underimg">
+                    <p>The Darragh</p>
+                    <p id="cmimi">$54</p>
+                </div>
+            </div>
+
+            <div class="imageshop">
+                <img src="./images/bestsell4.png" alt="" class="img4">
+                <div class="underimg">
+                    <p>The Rue & Festive Brownies</p>
+                    <p id="cmimi">$54</p>
+                </div>
+            </div>
           </div>
 
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
+          <div class="bestsell-fotot">
+            <div class="imageshop">
+                <img src="./images/flower1.png" alt="" class="img1">
+                <div class="underimg">
+                    <p>AUTUMN</p>
+                    <p id="cmimi">$104</p>
+                </div>
+            </div>
 
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
+            <div class="imageshop">
+                <img src="./images/flower2.png" alt="" class="img2">
+                <div class="underimg">
+                    <p>FARMER'CHOICE PEONIES</p>
+                    <p id="cmimi">$89</p>
+                </div>
+            </div>
 
-   </main>
+            <div class="imageshop">
+                <img src="./images/flower3.png" alt="" class="img3">
+                <div class="underimg">
+                    <p>ORCHARD</p>
+                    <p id="cmimi">$65</p>
+                </div>
+            </div>
+
+            <div class="imageshop">
+                <img src="./images/flower4.png" alt="" class="img4">
+                <div class="underimg">
+                    <p>PLUMBERRY</p>
+                    <p id="cmimi">$54</p>
+                </div>
+            </div>
+          </div>
+
+      </main>
    
 </body>
 </html>
