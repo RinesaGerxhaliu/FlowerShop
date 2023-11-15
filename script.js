@@ -3,10 +3,9 @@ var imgs = document.querySelectorAll('.slider img');
 let dots = document.querySelectorAll('.dot');
 var interval = 3000;
 
-// Second banner
+
 var secondEventTitle = 'Hi! *Freshmen* Orientation Day';
 
-// Third banner
 var thirdEventDate = new Date('2023-02-01'); // pull this from database
 var thirdEventDateString = thirdEventDate.toLocaleDateString('en-us', { year: 'numeric', month: 'short', day: 'numeric' });
 var days = calculateDays(new Date(), thirdEventDate) || 0;
