@@ -1,79 +1,181 @@
-
-header{
+header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     margin: 10px;
-    padding: 10px;
-  
+    margin-top: 5px;
 }
+
+body {
+    margin: 0;
+}
+
+.headeri {
+    margin: 25px;
+}
+
 header ul {
     display: flex;
     flex-direction: row;
     list-style: none;
 }
-header ul li{
-    margin: 10px;
+
+header ul li {
+    margin: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(26, 23, 23);
     text-decoration: none;
     font-size: 20px;
 }
-.main-fillimi{
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    background-color: rgb(255, 255, 230);
-    align-items:center;
-    font-style: italic;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 25px;
+
+.listat a {
+    padding: 5px 0;
+    text-decoration: none;
+    border-bottom: 2px solid #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.listat a:hover {
+    color: #cdf0e6;
+    border-bottom: 2px solid #cce6df;
+}
+
+.login {
+    margin-top: 40px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.login img {
+    width: 40px;
+    height: 40px;
     margin-right: 25px;
 }
-body{
-    margin: 20px;
-}
-button{
-    align-items: center;
-    width: 150px;
-    height: 40px;
-    background-color: lightpink;
-    border: none;
-    cursor: pointer;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
-    position: relative;
-}
-button:before{
-    content: "";
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 2px solid black;
-    border-bottom-color: transparent;
-    border-right-color: transparent;
-    transition: 0.8s;
-}
-button:after{
-    content: "";
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 2px solid black;
-    border-bottom-color: black;
-    border-right-color: black;
-    transition:width 0.8s ease, height 0.8s ease;
 
+.login a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(25, 24, 24);
 }
-button:hover::before,
-button:hover::after{
+
+
+.login a:hover {
+    border-bottom: 2px solid #cce6df;
+    
+}
+
+.mbiheader{
+    text-align: center;
     width: 100%;
-    height: 100%;
+    height: 20%;
+    background-color: rgb(197, 161, 114);
 }
+.mbiheader p{
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
+.ourStoy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(254, 244, 232);
+    align-items: center;
+}
+
+.theHistory{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+}
+
+.theHistory h2{
+    margin-top: 90px;
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    color: #4b4b4b;
+    margin-bottom: 30px;
+}
+
+.theHistory p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 29px;
+    color: #868383;
+    margin-top: 0;
+}
+
+.imagesInTheStory{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imagesInTheStory img{
+    width: 30%;
+    padding: 40px;
+    padding-bottom: 120px;
+}
+
+/* .section-aboutUs{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 60px;
+    /* padding: 30px; */
+    /* width: 70%;
+    text-align: center;
+}
+
+.image-inside{
+    padding: 30px;
+}
+
+.image-inside img{
+    max-width: 100%;
+}
+
+.text-aboutUs{
+    display: flex;
+    flex-direction: column;
+
+} */ 
+.section-about {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /* margin-top: -40px; */
+}
+
+.section-about{
+    margin: 70px 80px;
+    width: 50%;
+}
+
+.site-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+    flex-direction: column;
+}
+
+.site-container h2 {
+    font-size: 60px;
+    margin-bottom: -1px;
+}
+
+.site-container p {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 
 .row{
     display: flex;
