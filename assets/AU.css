@@ -337,9 +337,15 @@ section{
 .grid-gallery img{
   border-radius: 15px 50px;
   border: 2px solid rgb(254, 244, 232);
-  padding: 40px;
+  margin: 5px;
+  padding: 45px;
   width: 200px;
   height: 150px;
+}
+img:hover{
+    border: 10px solid rgb(254, 244, 232);
+
+    box-shadow: 0 0 20x 1px rgba(0, 140, 186, 0.5);
 }
 /* p */
 .insta-feed{
