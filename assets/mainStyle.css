@@ -1,0 +1,147 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 10px;
+    margin-top: 5px;
+}
+
+body {
+    margin: 0;
+}
+
+.headeri {
+    margin: 25px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+header ul li {
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(26, 23, 23);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.listat a {
+    padding: 5px 0;
+    text-decoration: none;
+    border-bottom: 2px solid #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.listat a:hover {
+    color: #cdf0e6;
+    border-bottom: 2px solid #cce6df;
+}
+
+.login {
+    margin-top: 40px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.login img {
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+}
+
+.login a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(25, 24, 24);
+}
+
+
+.login a:hover {
+    border-bottom: 2px solid #cce6df;
+    
+}
+
+.mbiheader{
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(197, 161, 114);
+}
+.mbiheader p{
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
+.site-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(251, 251, 238);
+    padding: 60px;
+}
+
+.help-section h2{
+    font-size: 40px;
+    color: rgb(112, 111, 111);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.help-section p{
+    font-size: 30px;
+    color: rgb(79, 78, 78);
+}
+
+.site-container-number-chat-email{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+.number img{
+    width: 70%;
+}
+
+.number h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-left: 10px;
+    color: rgb(91, 89, 89);
+    margin-top: 0;
+}
+
+.number p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    margin-left: 10px;
+    color: rgb(91, 89, 89);
+    border-bottom: 1px solid rgb(148, 147, 147);
+}
+
+.email img{
+ width: 40%;
+}
+
+.email h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-left: 10px;
+    color: rgb(91, 89, 89);
+    margin-top: 0;
+}
+
+.email p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(91, 89, 89);
+    border-bottom: 1px solid rgb(148, 147, 147);
+}
