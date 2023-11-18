@@ -122,57 +122,38 @@ header ul li {
     padding-bottom: 120px;
 }
 
-/* .section-aboutUs{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 60px;
-    /* padding: 30px; */
-    /* width: 70%;
-    text-align: center;
-}
 
-.image-inside{
-    padding: 30px;
-}
-
-.image-inside img{
-    max-width: 100%;
-}
-
-.text-aboutUs{
-    display: flex;
-    flex-direction: column;
-
-} */ 
 .section-about {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
-    /* margin-top: -40px; */
+    margin: 60px;
 }
 
-.section-about{
-    margin: 70px 80px;
-    width: 50%;
+.section-about img{
+    width: 40%;
+    /* margin-left: 10px; */
+    margin-top: 40px;
 }
 
 .site-container{
-    width: 100%;
+    width: 35%;
     display: flex;
     justify-content: center;
-    margin-left: 70px;
     flex-direction: column;
 }
 
 .site-container h2 {
     font-size: 60px;
-    margin-bottom: -1px;
+    margin-bottom: -0.5px;
+    color: #4b4b4b;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .site-container p {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
+    color: #999;
 }
 
 
