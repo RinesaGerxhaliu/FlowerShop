@@ -128,6 +128,7 @@ header ul li {
 
 .email img{
  width: 40%;
+ margin-top: 10px;
 }
 
 .email h3{
@@ -186,6 +187,7 @@ header ul li {
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(82, 82, 82);
+   
 }
 
 .store-location img{
@@ -212,3 +214,10 @@ header ul li {
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: 10px;
 }
+
+.form-general p{
+    font-size: 20px;
+    color: gray;
+    margin-left: 80px;
+}
+
