@@ -84,7 +84,7 @@ header ul li {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgb(251, 251, 238);
+    background-color: rgb(240, 240, 233);
     padding: 60px;
 }
 
@@ -144,4 +144,71 @@ header ul li {
     margin-left: 10px;
     color: rgb(91, 89, 89);
     border-bottom: 1px solid rgb(148, 147, 147);
+}
+
+.contactUs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 70px;
+   
+}
+
+.contactUs h2{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 40px;
+}
+
+
+.contactUs p{
+    width: 30%;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.store-location{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 90px 0;
+    background-color: rgb(240, 240, 233);
+}
+
+.store-location h2{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 120px;
+    color: rgb(77, 76, 76);
+}
+
+.store-location p{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(82, 82, 82);
+}
+
+.store-location img{
+    width: 40%;
+    padding-left: 50px;
+}
+
+.form-general{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.general-enquiries{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.general-enquiries h2{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
 }
