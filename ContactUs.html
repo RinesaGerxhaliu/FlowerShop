@@ -82,47 +82,54 @@
                 <img src="./images/Contact-Store.webp" alt="store-location">
             </div>
 
-            <div class="form-general">
+            <div class="container">
 
-                <div class="general-enquiries">
-                    <h2>General Enquiries</h2>
-                    <p>Please use the form below for general enquiries.</p>
-                </div>
+                <form action="action_page.php">
 
-                <div class="forma">
-                    <form action="">
-                    <div class="emri-email">
-                        <div class="form-emri">
-                            <label for="text" class="emri">
-                                <span>Emri</span>
-                                <span>*</span>
-                            </label>
-                            <input type="text" data-type="text" class="name-input" id="2414-text" name="text" placeholder="Your Name" presence="" required>
-                        </div> 
-
-                        <div class="form-email">
-                            <label for="text" class="email">
-                                <span>Email</span>
-                                <span>*</span>
-                             </label>
-                             <input type="email"data-type="email" name="email" class="email-input" id="2414-email" placeholder="email" presence="" required>
-                        </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
                   </div>
-                        <div class="form-measages">
-                            <label for="messages" class="message">
-                                <span>Message*</span>
-                            </label>
 
-                            <textarea id="2414-textarea" data-type="textarea" class="message" rows="3" name="textarea" placeholder="Message" presence=""></textarea>
-                        </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                  </div>
 
-                        <div class="form-butoni">
-                            <button class="butoni">Submit</button>
-                        </div>
-                    </form>
-                </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="country">Email</label>
+                    </div>
 
-            </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your email..">
+                      </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <input type="submit" value="Submit">
+                  </div>
+
+                </form>
+              </div>
+          
         </main>
 
         <footer class="footermain"> 
