@@ -156,8 +156,6 @@ header ul li {
     color: #999;
 }
 
-
-
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -283,8 +281,8 @@ section{
     flex: 20px;
 }
 .icon-i1{
-    margin: 20px;
-    background: rgb(254, 244, 232);
+    /* margin: 20px; */
+    background: rgb(241, 234, 224);
     
     display: flex;
     flex-wrap: wrap;
@@ -363,7 +361,7 @@ section{
     text-align: center;
     width:100%;
 }
-/* p */
+
 .insta-feed{
     width: 40%;
     display: flex;
