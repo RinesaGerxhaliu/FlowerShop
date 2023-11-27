@@ -316,9 +316,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 100px;
-    gap: 15rem;
+    gap: 10rem;
     background-color: rgb(254, 244, 232) ;
    padding: 60px;
 }
@@ -332,17 +330,23 @@ section{
     margin: 10px 0;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(112, 111, 111);
+}.container img{
+    width: 150%;
+    height: 150%;
 }
 .grid-gallery{
-    margin: 95px;
+    margin: 2%;
+    padding: 22px;
+   
 }
 .grid-gallery img{
-  border-radius: 4px;
+    padding: 10px;
+
+    margin: 2%;
+    border-radius: 4px;
   border: 2px solid rgb(254, 244, 232);
-  margin: 5px;
-  padding: 25px;
-  width: 200px;
-  height: 150px;
+  width: 300px;
+  height: 250px;
 }
 .grid-gallery img:hover{
     border: 2px solid rgb(254, 244, 232);
