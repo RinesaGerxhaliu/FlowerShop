@@ -1,3 +1,4 @@
+
 header {
     display: flex;
     justify-content: space-between;
@@ -520,7 +521,8 @@ header ul li {
     transition: 0.3s ease;
     padding: 14px 15px;
 }
-/* hyhyhy */
+
+
 .footercenter{
     display: flex;
     flex-direction: column;
