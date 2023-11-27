@@ -282,7 +282,7 @@ section{
 }
 .icon-i1{
     /* margin: 20px; */
-    background: rgb(241, 234, 224);
+    background-color: rgb(254, 243, 243);
     
     display: flex;
     flex-wrap: wrap;
