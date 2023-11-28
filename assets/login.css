@@ -219,7 +219,7 @@ input {
 }
 
 button {
-    background-color: #28904e;
+    background-color: #ac893e;
     color: #fff;
     padding: 13px;
     border: none;
@@ -229,7 +229,7 @@ button {
 }
 
 button:hover {
-    background-color: #28904e;
+    background-color: #cdb05f;
 }
 
 .signup-link {
@@ -239,7 +239,7 @@ button:hover {
 }
 
 .signup-link a {
-    color: #33b761;
+    color: #b77e33;
 }
 
 .footermain{
