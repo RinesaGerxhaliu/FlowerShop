@@ -281,14 +281,12 @@ section{
     flex: 20px;
 }
 .icon-i1{
-    /* margin: 20px; */
-    background-color: rgb(254, 243, 243);
-    
+    background-color: rgb(239, 239, 238);
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 .icon-i1 .icons{
     background: #fff;
@@ -318,35 +316,39 @@ section{
     justify-content: center;
     gap: 10rem;
     background-color: rgb(254, 244, 232) ;
-   padding: 60px;
+    padding: 90px 120px;
 }
 .container h1{
     margin: 0;
     font-size: 55px;
     color: rgb(81, 80, 80);
 }
+
 .container p{
     font-size: 20px;
-    margin: 10px 0;
+    /* margin: 5px 0; */
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(112, 111, 111);
-}.container img{
-    width: 150%;
+}
+
+.container img{
+    width: 120%;
     height: 150%;
 }
 .grid-gallery{
     margin: 2%;
     padding: 22px;
+    margin-left: 50px;
    
 }
 .grid-gallery img{
     padding: 10px;
-
     margin: 2%;
     border-radius: 4px;
-  border: 2px solid rgb(254, 244, 232);
-  width: 300px;
-  height: 250px;
+    border: 2px solid rgb(254, 244, 232);
+    width: 300px;
+    height: 250px;
+    margin-left: 60px;
 }
 .grid-gallery img:hover{
     border: 2px solid rgb(254, 244, 232);
@@ -355,9 +357,14 @@ section{
 }
 .text h2{
     font-size: 60px;
-    color: rgb(81, 80, 80);
+    color: rgb(88, 87, 87);
     text-align: center;
     width:100%;
+}
+
+.text p{
+    margin-top: 20px;
+    font-size: 20px;
 }
 .grid-gallery p{
     font-size: 30px;
@@ -483,4 +490,15 @@ section{
     padding: 20px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width: 600px) {
+    .section-about{
+        flex-direction: column;
+    }  
+    .section-about img{
+        width: 100%;
+    }
+    .site-container{
+        width: 100%;
+    }
 }
