@@ -1,107 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/register.css">
+    <script src="script.js" defer></script>
     <title>Flower Shop</title>
+    <link rel="stylesheet" href="./assets/index.css">
 </head>
+
 <body>
 
     <div class="mbiheader">
         <p>Same day Aucland delivery orders placed before 1pm weekdays</p>
     </div>
-    
+
     <header>
         <div class="headeri">
-            <a href="Homepage.html"><img src="./images/blumenshop_com_logo.svg" height="45px"></a>
+            <a href="Homepage.html"><img src="./images/blumenshop_com_logo.svg" class="logo"></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    
+
         <ul class="listat">
-           <a href="Homepage.html"><li>Home</li></a>
-            <a href="ShopPage.html"><li>Shop Blooms</li></a>
-            <a href="AboutUs.html"><li>About Us</li></a>
-            <a href="ContactUs.html"><li>Contact Us</li></a>
-        </ul> 
-       
-        <div class="login">
-        <a href="login.html"><img src="./images/usericon.png" alt="logo1" id="">Sign In</a>
-        </div>
+            <a href="Homepage.html">
+                <li>Home</li>
+            </a>
+            <a href="ShopPage.html">
+                <li>Shop Blooms</li>
+            </a>
+            <a href="AboutUs.html">
+                <li>About Us</li>
+            </a>
+            <a href="ContactUs.html">
+                <li>Contact Us</li>
+            </a>
+            <a href="login.html">
+                <li>Sign In</li>
+            </a>
+        </ul>
     </header>
 
     <div class="form-body">
-    <form id="registrationForm" onsubmit="return validateForm()">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
 
-        <label for="confirmPassword">Confirm Password:</label>
-        <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
 
-        <button type="submit">Sign Up</button>
-    </form>
+            <button type="submit">Sign Up</button>
+        </form>
     </div>
 
-  <script>
-    function validateForm() {
-      var password = document.getElementById("password").value;
-      var confirmPassword = document.getElementById("confirmPassword").value;
+    <script>
 
-      if (password !== confirmPassword) {
-        alert("Passwords do not match");
-        return false;
-      }
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
 
-      return true;
-    }
-  </script>
+            if (password !== confirmPassword) {
+                alert("Passwords do not match");
+                return false;
+            }
+
+            return true;
+        }
+
+    </script>
 
 
-<footer class="footermain"> 
-        
-    <div class="mrenafooter">
-    <div class="footerleft">
-        <img src="./images/blumenshop_com_logo.svg" height="45px" >
-    </div>
+    <footer class="footermain">
 
-    <div class="footercenter">
-       <h2>Links</h2>
-        <a href="">Shop</a>
-        <a href="">Events & Corporate</a>
-        <a href="">Contact Us</a>
-        <a href="">About Us</a>
+        <div class="mrenafooter">
+            <div class="footerleft">
+                <img src="./images/blumenshop_com_logo.svg" height="45px">
+            </div>
 
-    </div>
+            <div class="footercenter">
+                <h2>Links</h2>
+                <a href="">Shop</a>
+                <a href="">Events & Corporate</a>
+                <a href="">Contact Us</a>
+                <a href="">About Us</a>
 
-    <div class="footercenter-2">
-        <h2>Terms</h2>
-        <p>Terms & Conditions</p>
-        <p>Privacy Policy</p>
-        <p>Terms of Service</p>
-        <p>Refund Policy</p>
-    </div>
+            </div>
 
-    <div class="footeright">
-        <h2>Contacts</h2>
-        <p>info@blumen.com</p>
-        <p>098 302 0367</p>
-        <p>277 Broadway, Newmarket</p>
-        <p>Auckland Auckland</p>
+            <div class="footercenter-2">
+                <h2>Terms</h2>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+                <p>Refund Policy</p>
+            </div>
+
+            <div class="footeright">
+                <h2>Contacts</h2>
+                <p>info@blumen.com</p>
+                <p>098 302 0367</p>
+                <p>277 Broadway, Newmarket</p>
+                <p>Auckland Auckland</p>
+            </div>
         </div>
-      </div>
-    
- 
-    <div class="fundi">
-        <p>ecommerce store by elemental</p>
-        <p>@2023, The Blumen Shop</p>
-    </div>
 
-</footer>
+
+        <div class="fundi">
+            <p>ecommerce store by elemental</p>
+            <p>@2023, The Blumen Shop</p>
+        </div>
+
+    </footer>
 
 </body>
+
 </html>
