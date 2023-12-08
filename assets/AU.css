@@ -492,13 +492,84 @@ section{
     font-family: Arial, Helvetica, sans-serif;
 }
 @media only screen and (max-width: 600px) {
+    .mrenafooter{
+        flex-direction: column;
+        margin: 0;
+        padding: 20px;
+    }
+
+    
     .section-about{
         flex-direction: column;
+        margin: 0;
     }  
     .section-about img{
         width: 100%;
     }
     .site-container{
         width: 100%;
+    }
+
+    .grid-gallery{
+        margin: 20px 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .grid-gallery img{
+        /* width: auto; */
+        margin-left: 0;
+       
+    }
+
+    .ourStoy{
+        margin: 0;
+    }
+
+    .theHistory h2{
+        font-size: 40px;
+    }
+
+    .theHistory{
+        width: 100%;
+    }
+
+    .imagesInTheStory{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .imagesInTheStory img{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .site-container h2{
+        font-size: 30px;
+    }
+
+   
+    .site-container img{
+        width: 100%;
+    }
+
+    .container{
+        margin: 40px 0;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .container img{
+        width: 100%;
+        margin-bottom: -90px;
+    }
+
+    .text h1{
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+    .text{
+        margin: 20px;
     }
 }

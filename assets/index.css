@@ -641,13 +641,16 @@ header ul li {
     .site-desc a{
        width: 100%;
        text-align: center;
-        margin: 35px;
     }
-
+    .site-desc{
+        width: auto;
+        margin: 0;
+        padding: 20px;
+    }
     .site-desc h2{
         font-size: 40px;
        margin-top: 30px;
-       margin-left: 40px;
+       margin-left: 0px;
     } 
 
     .main-fillimi{
@@ -673,41 +676,43 @@ header ul li {
     }
 
     .site-desc-2{
-        width: 100%;
-        
+        width: auto;
+        margin: 0;
+        padding: 20px;
     }
 
     .site-desc-2 h2{
         margin-top: -20px;
         font-size: 40px;
-        margin-left: 20px;
+        margin-left: 0px;
     }
 
     .site-desc-2 p{
-        margin-left: 20px;
+        margin-left: 00px;
     }
 
     .site-desc-2 a{
-        margin-left: 60px;
+        margin-left: 0px;
     }
 
     .site-bestblooms{
         flex-direction: column;
+        margin-top: 0;
     }
 
     .site-desc-3{
-        width: 100%;
+        width: auto;
+        margin: 0;
+        padding: 20px;
     }
 
     .site-desc-3 h2{
         padding-top: 60px;
         font-size: 35px;
-        margin-left: -40px;
     }
 
     .site-desc-3 p{
-       margin-left: -40px; 
-       flex-wrap: wrap;
+       margin-left: 0px; 
     }
 
     .site-desc-3 a{
@@ -720,8 +725,38 @@ header ul li {
     }
     .site-bestblooms img{
         width: 100%;
-        margin-left: 0;
+        margin: 0;
     }
-
-    .
+    .mrenafooter{
+        flex-direction: column;
+        margin: 0;
+        padding: 20px;
+    }
+    .shop-map-item img{
+        padding: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .text-images-instafeed{
+        flex-direction: column;
+    }
+    .shop-map-item{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .site-desc-4{
+        margin: 0;
+        padding: 0;
+    }
+    .site-desc-4 a{
+        width: auto;
+    }
+    .insta-feed{
+        margin: 0;
+        padding: 20px;
+        width: auto;
+    }
+    .images-container{
+        width: 100%;
+    }
 }

@@ -257,3 +257,26 @@ img {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+@media only screen and (max-width: 600px) {
+    .mbiheader{
+        font-size: 20px;
+        margin-right: 0;
+    }
+
+    .collection-fotot{
+        flex-direction: column;
+        margin: 20px 0;
+
+    }
+
+    .mrenafooter{
+        flex-direction: column;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .collection{
+        font-size: 25px;
+    }
+}
