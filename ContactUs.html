@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,36 +9,6 @@
     <link rel="stylesheet" href="./assets/mainStyle.css">
     <script src="script.js" defer></script>
 </head>
-
-<script>
-
-    function validateForm() {
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var message = document.getElementById('message').value;
-
-        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        if (!emailPattern.test(email)) {
-            alert('Ju lutem vendosni një email të vlefshëm.');
-            return false;
-        }
-
-        if (message.trim() === '') {
-            alert('Ju lutem shkruani një mesazh.');
-            return false;
-        }
-
-        return true;
-
-        if (name.trim() === '') {
-            alert('Ju lutem vendosni emrin tuaj.');
-            return false;
-        }
-    }
-
-
-</script>
-
 <body>
 
     <div class="mbiheader">

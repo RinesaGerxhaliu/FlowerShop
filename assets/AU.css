@@ -363,6 +363,10 @@ section {
     font-size: 30px;
   }
 
+  .site-container{
+    text-align: center;
+  }
+
   .site-container img {
     width: 100%;
   }
@@ -371,6 +375,7 @@ section {
     margin: 40px 0;
     flex-direction: column;
     padding: 0;
+    text-align: center;
   }
 
   .container img {
