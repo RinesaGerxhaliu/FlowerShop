@@ -48,7 +48,6 @@
 
   .OrderFlowers{
     display: flex;
-    justify-content: ;
     flex-direction: row;
     margin: 80px;
   }
@@ -62,3 +61,93 @@
     width: 100%;
   }
 
+  .p-1{
+    font-size: 22px;
+    margin-top: 100px;
+    margin-right: 30px;
+  }
+
+  .p-2{
+    font-size: 20px;
+    margin-top: 100px;
+  }
+
+.p-2 li{
+    padding: 10px;
+  }
+
+  .paragrafat{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: row;
+    font-size: 22px;
+    margin: 80px;
+    padding:  30px;
+  }
+
+  .paragrafi1{
+    margin-right: 30px;
+
+  }
+
+  .paragrafat h2{
+    font-size: 40px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .mrenafooter{
+        flex-direction: column;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .mbiheader {
+      font-size: 20px;
+      margin-right: 0;
+    }
+  
+    .collection-fotot {
+      flex-direction: column;
+      /* margin: 0 10px; */
+      margin: 20px 30px;
+
+    }
+  
+    .mrenafooter {
+      flex-direction: column;
+    }
+  
+    .collection {
+      font-size: 25px;
+      margin-left: -10px;
+      margin-right: 17px;
+    }
+
+    .hrline{
+      margin: 0 34px;
+    }
+
+    .OrderFlowers{
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .imageInside{
+      width: 100%;
+      margin: 0;
+    }
+
+    .p-1{
+      margin: 0 30px;
+    }
+    
+    .p-2{
+      margin: 0 30px;
+    }
+
+    .paragrafat{
+      flex-direction: column;
+      margin: 0;
+    }
+  }
