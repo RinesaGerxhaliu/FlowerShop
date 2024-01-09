@@ -8,3 +8,57 @@
     height: 70%;
     
 }
+
+  .collection-fotot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 90px 60px;
+  }
+  
+  .imageshop img {
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s ease all;
+  }
+  
+  .imageshop {
+    margin: 0 15px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .underimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(189, 186, 186);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .imageshop img:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+  }
+
+  .hrline{
+    margin: 0 80px;
+  }
+
+  .OrderFlowers{
+    display: flex;
+    justify-content: ;
+    flex-direction: row;
+    margin: 80px;
+  }
+
+  .imageInside{
+    width: 30%;
+    margin: 0 40px;
+  }
+
+  .OrderFlowers img{
+    width: 100%;
+  }
+
