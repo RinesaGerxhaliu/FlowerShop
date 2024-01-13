@@ -1,4 +1,6 @@
 <?php
+session_start(); // Start the session
+
 include("header.php");
 include("inc/user.php");
 include("inc/db_connection.php");
@@ -8,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = htmlspecialchars($_POST['password']);
 
     // Create a database connection instance
-    $dbConnection = new DatabaseConnection();
+    $dbConnection = DatabaseConnection::getInstance();
     $conn = $dbConnection->getConnection();
 
     // Create a User instance
@@ -16,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Call the login method from the User class
     if ($user->login($username, $password)) {
-        echo "Login successful!";
+        header("Location: Homepage.php");
     } else {
         echo "Invalid username or password.";
     }
@@ -61,6 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             return false;
         }
 
+        // alert('Form submitted successfully!');
         return true;
     }
 </script>

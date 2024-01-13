@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Passwords do not match.";
         } else {
             // Create a database connection instance
-            $dbConnection = new DatabaseConnection();
+            $dbConnection = DatabaseConnection::getInstance();
             $conn = $dbConnection->getConnection();
 
             // Create a User instance
@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             } else {
                 // Call the register method from the User class
                 if ($user->register($username, $email, $password)) {
-                    echo "Registration successful!";
+                    header("Location: login.php");
                 } else {
                     echo "Error during registration.";
                 }

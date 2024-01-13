@@ -49,8 +49,15 @@
             <a href="ContactUs.php">
                 <li>Contact Us</li>
             </a>
-            <a href="login.php">
-                <li>Sign In</li>
-            </a>
+            <?php
+            // Check if the user is not logged in
+            if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
+                echo '<a href="dashboard.php"><li>Dashboard</li></a>';
+                echo '<a href="logout.php"><li>Logout</li></a>';
+            } else {
+                // Display the "Sign In" link for non-logged-in users
+                echo '<a href="login.php"><li>Sign In</li></a>';
+            }
+            ?>
         </ul>
     </header>

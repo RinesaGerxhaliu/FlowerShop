@@ -1,14 +1,15 @@
 <?php
 
 class DatabaseConnection {
-    private $host = "localhost";
-    private $username = "root";
-    private $password = "";
-    private $database = "flowershop";
+    private static $instance = null;
     private $conn;
 
-    // Constructor to establish the database connection
-    public function __construct() {
+    private function __construct() {
+        $this->host = "localhost";
+        $this->username = "root";
+        $this->password = "";
+        $this->database = "flowershop";
+
         $this->conn = new mysqli($this->host, $this->username, $this->password, $this->database);
 
         if ($this->conn->connect_error) {
@@ -16,15 +17,25 @@ class DatabaseConnection {
         }
     }
 
-    // Get the database connection
+    public static function getInstance() {
+        if (self::$instance === null) {
+            self::$instance = new self();
+        }
+        return self::$instance;
+    }
+
     public function getConnection() {
         return $this->conn;
     }
 
-    // Close the database connection
     public function closeConnection() {
         $this->conn->close();
     }
+
+    public function query($sql) {
+        return $this->conn->query($sql);
+    }
 }
+
 
 ?>

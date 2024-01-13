@@ -1,4 +1,12 @@
-<?php include("header.php")?>
+<?php
+    include("header.php");
+    include("inc/db_connection.php");
+    include("inc/contact_form.php");
+
+    $contactForm = new ContactForm();
+
+    $contactForm->handleFormSubmission();
+?>
     <main>
         <div class="site-container-contact">
             <div class="help-section">

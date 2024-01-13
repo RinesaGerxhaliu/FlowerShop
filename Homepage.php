@@ -1,4 +1,12 @@
-<?php include("header.php")?>
+    <?php 
+        session_start();
+        include("inc/db_connection.php");
+        include("inc/flowers.php");
+        include("header.php");
+
+        $flower = new Flower();
+        $firstFourFlowers = $flower->getFirstFourFlowers();
+    ?>
 
     <!-- <main> -->
         <div class="main-fillimi">
@@ -17,37 +25,15 @@
         </div>
 
         <div class="fotografit">
-            <div class="rubrika">
-                <img src="./images/flower1.png" alt="" class="img1">
-                <div class="underimg">
-                    <p>AUTUMN</p>
-                    <p id="cmimi">$104</p>
+            <?php foreach($firstFourFlowers as $flower): ?>
+                <div class="rubrika">
+                    <img src="./images/<?= $flower["image"] ?>" alt="" class="img1">
+                    <div class="underimg">
+                        <p><?= $flower["flower_name"] ?></p>
+                        <p id="cmimi">$<?= $flower["price"] ?></p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="rubrika">
-                <img src="./images/flower2.png" alt="" class="img2si">
-                <div class="underimg">
-                    <p>FARMER'CHOICE PEONIES</p>
-                    <p id="cmimi">$89</p>
-                </div>
-            </div>
-
-            <div class="rubrika">
-                <img src="./images/flower3.png" alt="" class="img3">
-                <div class="underimg">
-                    <p>ORCHARD</p>
-                    <p id="cmimi">$65</p>
-                </div>
-            </div>
-
-            <div class="rubrika">
-                <img src="./images/flower4.png" alt="" class="img4">
-                <div class="underimg">
-                    <p>PLUMBERRY</p>
-                    <p id="cmimi">$54</p>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
 
         <div class="visit-bestsellers">

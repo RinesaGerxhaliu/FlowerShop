@@ -33,7 +33,13 @@ class User {
             $hashedPassword = $row['password'];
 
             // Use password_verify to check if the entered password matches the hashed password
-            return password_verify($password, $hashedPassword);
+            if (password_verify($password, $hashedPassword)) {
+                // Start a session and set the 'logged_in' variable to true
+                session_start();
+                $_SESSION['logged_in'] = true;
+                $_SESSION['username'] = $username; // Optionally store username in session
+                return true;
+            }
         }
 
         return false;
@@ -48,5 +54,14 @@ class User {
 
         return $result->num_rows > 0;
     }
+    
+    public function logout() {
+        // Unset all session variables
+        $_SESSION = array();
+    
+        // Destroy the session
+        session_destroy();
+    }
+    
 }
 ?>
