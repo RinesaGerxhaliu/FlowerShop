@@ -1,57 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include("header.php")?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowershop</title>
-    <link rel="stylesheet" href="./assets/index.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
-        integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
-    <script src="script.js" defer></script>
-</head>
-
-<body>
-    <div class="mbiheader">
-        <p>Same day Aucland delivery orders placed before 1pm weekdays</p>
-    </div>
-
-    <header>
-        <div class="headeri">
-            <a href="Homepage.html"><img src="./images/blumenshop_com_logo.svg" class="logo"></a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-
-        <ul class="listat">
-            <a href="Homepage.html">
-                <li>Home</li>
-            </a>
-            <a href="ShopPage.html">
-                <li>Shop Blooms</li>
-            </a>
-            <a href="WinterCollection.html">
-                <li>Winter Collection</li>
-            </a>
-            <a href="AboutUs.html">
-                <li>About Us</li>
-            </a>
-            <a href="ContactUs.html">
-                <li>Contact Us</li>
-            </a>
-            <a href="login.html">
-                <li>Sign In</li>
-            </a>
-        </ul>
-    </header>
-
-
-
-    <main>
+    <!-- <main> -->
         <div class="main-fillimi">
             <div class="site-desc">
                 <h2>We Create</h2>
@@ -209,47 +158,4 @@
         </div>
     </main>
 
-    <footer class="footermain">
-
-        <div class="mrenafooter">
-            <div class="footerleft">
-                <img src="./images/blumenshop_com_logo.svg" height="45px">
-            </div>
-
-            <div class="footercenter">
-                <h2>Links</h2>
-                <a href="">Shop</a>
-                <a href="">Events & Corporate</a>
-                <a href="">Contact Us</a>
-                <a href="">About Us</a>
-
-            </div>
-
-            <div class="footercenter-2">
-                <h2>Terms</h2>
-                <p>Terms & Conditions</p>
-                <p>Privacy Policy</p>
-                <p>Terms of Service</p>
-                <p>Refund Policy</p>
-            </div>
-
-            <div class="footeright">
-                <h2>Contacts</h2>
-                <p>info@blumen.com</p>
-                <p>098 302 0367</p>
-                <p>277 Broadway, Newmarket</p>
-                <p>Auckland Auckland</p>
-            </div>
-        </div>
-
-
-        <div class="fundi">
-            <p>ecommerce store by elemental</p>
-            <p>@2023, The Blumen Shop</p>
-        </div>
-
-    </footer>
-
-</body>
-
-</html>
+    <?php include("footer.php")?>

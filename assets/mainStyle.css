@@ -5,7 +5,13 @@
     background-color: rgb(240, 240, 233);
     padding: 60px;
 }
-
+.site-container-contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(240, 240, 233);
+    padding: 60px;
+}
 .help-section h2{
     font-size: 40px;
     color: rgb(112, 111, 111);
@@ -188,6 +194,8 @@
 }
 .form-img img{
     max-width: 100%;
+    width: 100%!important;
+    height: 100%!important;
 }
 .btn,
 button,

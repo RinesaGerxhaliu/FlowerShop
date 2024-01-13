@@ -212,6 +212,7 @@ section {
 .icon-i1 .icons img {
   height: 5rem;
   margin-right: 2rem;
+  width: 70px;
 }
 .icon-i1 .icons h5 {
   color: #333;
@@ -255,12 +256,12 @@ section {
 }
 .grid-gallery img {
   padding: 10px;
-  margin: 2%;
+  /* margin: 2%; */
   border-radius: 4px;
   border: 2px solid rgb(254, 244, 232);
-  width: 300px;
+  width: 20%;
   height: 250px;
-  margin-left: 60px;
+  /* margin-left: 60px; */
 }
 .grid-gallery img:hover {
   border: 2px solid rgb(254, 244, 232);
