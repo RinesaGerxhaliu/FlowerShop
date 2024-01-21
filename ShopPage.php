@@ -1,4 +1,6 @@
-<?php include("header.php")?>
+<?php 
+session_start();    
+include("header.php")?>
 
       <main>
 
@@ -24,7 +26,7 @@
 
     <div class="collection-fotot">
         <div class="imageshop">
-            <img src="./images/bestsell1.png" alt="bestsell1">
+            <img class="imageshop-img" src="./images/bestsell1.png" alt="bestsell1">
         <div class="underimg">
             <p>The Vivienne Liberty Bouquet</p>
             <p id="cmimi">$86</p>
@@ -32,7 +34,7 @@
     </div>
 
     <div class="imageshop">
-        <img src="./images/bestsell2.png" alt="bestsell2">
+        <img class="imageshop-img" src="./images/bestsell2.png" alt="bestsell2">
        <div class="underimg">
             <p>The Jojo</p>
             <p id="cmimi">$56</p>
@@ -40,7 +42,7 @@
     </div>
 
     <div class="imageshop">
-            <img src="./images/bestsell3.png" alt="bestsell3">
+            <img class="imageshop-img" src="./images/bestsell3.png" alt="bestsell3">
          <div class="underimg">
             <p>The Darragh</p>
             <p id="cmimi">$76</p>
@@ -48,7 +50,7 @@
      </div>
 
          <div class="imageshop">
-             <img src="./images/bestsell4.png" alt="bestsell4">
+             <img class="imageshop-img" src="./images/bestsell4.png" alt="bestsell4">
            <div class="underimg">
                <p>The Rue & Festive Brownies</p>
                 <p id="cmimi">$37</p>
@@ -58,7 +60,7 @@
 
      <div class="collection-fotot">
         <div class="imageshop">
-            <img src="./images/flower1.png" alt="flower1">
+            <img class="imageshop-img" src="./images/flower1.png" alt="flower1">
                 <div class="underimg">
                  <p>AUTUMN</p>
                  <p id="cmimi">$104</p>

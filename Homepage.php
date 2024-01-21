@@ -8,12 +8,12 @@
         $firstFourFlowers = $flower->getFirstFourFlowers();
     ?>
 
-    <!-- <main> -->
+    <main>
         <div class="main-fillimi">
             <div class="site-desc">
-                <h2>We Create</h2>
+                <h2 class="creations">We Create</h2>
                 <p class="p">Unconventional and undeniably beautiful flowers</p>
-                <a href="ShopPage.html">
+                <a href="ShopPage.php">
                     <p>Shop Fresh Flowers</p>
                 </a>
             </div>
@@ -48,7 +48,7 @@
                     We are passionate about premium and top-quality flowers.</p>
                 <p>Every bouquet is carefully thought out, personalised, and unique!</p>
                 <div style="margin-top: 33px;">
-                    <a href="AboutUs.html">About Us</a>
+                    <a href="AboutUs.php">About Us</a>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
                     You pick the color palette and our artisans will pick the best, freshest florals
                     available to create a stunning arrangement for you.</p>
 
-                <a href="AboutUs.html">
+                <a href="AboutUs.php">
                     <p>Find Out More</p>
                 </a>
             </div>
@@ -90,7 +90,7 @@
                     </div>
 
                 </div>
-                <a href="ContactUs.html">
+                <a href="ContactUs.php">
                     <p>Get Directions</p>
                 </a>
             </div>

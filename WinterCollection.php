@@ -1,12 +1,14 @@
 
-<?php include("header.php")?>
+<?php 
+session_start();    
+include("header.php")?>
    <main>
     
         <div class="firstImage">
             <img src="./images/winterc2.jpg" alt="">
         </div>
 
-      <div class="collection">
+      <div class="collection-winterC">
         <div class="collection-fotot">
             <div class="imageshop">
                 <img src="./images/wintercol2.avif" alt="winterc3">

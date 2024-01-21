@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <main class="login_main">
     <div class="containeer">
         <form id="loginFormm" method="POST" action="login.php" onsubmit="return validateForm()">
-            <h2>Login</h2>
+            <h2 class="login-h2">Login</h2>
 
             <div class="inputt-group">
                 <label for="username">Username:</label>

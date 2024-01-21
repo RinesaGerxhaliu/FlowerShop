@@ -1,0 +1,35 @@
+.titulli {
+    text-align: center;
+    color: #333;
+    text-align: center;
+}
+
+.permbjtja-dashboard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+.emri {
+    font-size: 24px;
+    color: #333;
+}
+
+.permbajtja {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.submission-date {
+    color: #888;
+}
+
+.hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}

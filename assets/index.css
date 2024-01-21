@@ -104,18 +104,19 @@ header ul li {
   flex-direction: column;
 }
 
-.site-desc h2 {
-  margin: 0;
+.creations {
+  /* margin-right: 350px; */
+  /* margin: 0; */
   font-size: 60px;
 }
 
 .site-desc p {
-  margin: 10px 0;
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-fillimi img {
-  width: 60%;
+  width: 50%;
 }
 
 .site-desc p {
@@ -126,7 +127,7 @@ header ul li {
 .site-desc a {
   text-decoration: none;
   background-color: rgb(51, 109, 82);
-  width: 40%;
+  width: 50%;
   text-align: center;
   margin-top: 20px;
   color: aliceblue;
@@ -202,15 +203,15 @@ header ul li {
 }
 
 .site-desc-2 {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
-  margin-left: 5px;
+  /* margin-left: 5px; */
   flex-direction: column;
 }
 
 .site-desc-2 h2 {
-  font-size: 60px;
+  font-size: 45px;
   margin-bottom: -1px;
 }
 
@@ -263,7 +264,7 @@ header ul li {
 .site-desc-3 a {
   text-decoration: none;
   background-color: rgb(51, 109, 82);
-  width: 20%;
+  width: 40%;
   text-align: center;
   margin-top: 20px;
   color: aliceblue;

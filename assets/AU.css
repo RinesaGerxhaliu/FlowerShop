@@ -234,25 +234,25 @@ section {
 }
 .container h1 {
   margin: 0;
-  font-size: 55px;
+  font-size: 30px;
   color: rgb(81, 80, 80);
 }
 
-.container p {
+#paragrafet-AU{
   font-size: 20px;
   /* margin: 5px 0; */
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(112, 111, 111);
 }
 
-.container img {
+.fotoja-container {
   width: 120%;
   height: 150%;
 }
 .grid-gallery {
-  margin: 2%;
+  /* margin: 2%; */
   padding: 22px;
-  margin-left: 50px;
+  margin-left: 107px;
 }
 .grid-gallery img {
   padding: 10px;

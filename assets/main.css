@@ -59,7 +59,7 @@ img {
   margin: 90px 90px;
 }
 
-.imageshop img {
+.imageshop-img{
   width: 100%;
   object-fit: cover;
   transition: 0.5s ease all;

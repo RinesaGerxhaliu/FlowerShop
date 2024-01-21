@@ -1,6 +1,6 @@
 <?php
+session_start(); 
     include("header.php");
-    include("inc/db_connection.php");
     include("inc/contact_form.php");
 
     $contactForm = new ContactForm();

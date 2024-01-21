@@ -1,4 +1,6 @@
-<?php include("header.php")?>
+<?php 
+session_start();    
+include("header.php"); ?>
 
     <main>
 
@@ -42,19 +44,19 @@
 
         <div class="container">
 
-            <img src="images/eventsbanner1.webp" alt="foto313">
+            <img class="fotoja-container" src="images/eventsbanner1.webp" alt="foto313">
 
             <div class="text">
                 <h1>Our Approach</h1>
-                <p>At the BlumenShop, we create undeniably beautiful flowers for our customers. Our team of talented
+                <p id="paragrafet-AU">At the BlumenShop, we create undeniably beautiful flowers for our customers. Our team of talented
                     florists works hard to craft stunning arrangements that are sure to brighten up any space and bring
                     joy to your life.</p>
 
-                <p>We don't stick to traditional floristry rules and enjoy pushing boundaries to try something new. We
+                <p id="paragrafet-AU">We don't stick to traditional floristry rules and enjoy pushing boundaries to try something new. We
                     believe in experimenting with different colours, textures, and styles to create unique and
                     personalised floral designs that meet your specific needs.</p>
 
-                <p>Whether you need a stunning bouquet for a special occasion or a unique floral arrangement for your
+                <p id="paragrafet-AU">Whether you need a stunning bouquet for a special occasion or a unique floral arrangement for your
                     home or business, the BlumenShop has you covered.</p>
             </div>
         </div>
