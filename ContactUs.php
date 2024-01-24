@@ -103,18 +103,18 @@ session_start();
 
             if (!nameRegex.test(nameInput.value)) {
                 nameError.innerText = 'Invalid name';
-                return false;
+                return;
             }
             if (!emailRegex.test(emailInput.value)) {
                 emailError.innerText = 'Invalid email';
-                return false;
+                return;
             }
             if (!messageRegex.test(messageInput.value)) {
                 messageError.innerText = 'Invalid message';
-                return false;
+                return;
             }
 
-            return true;
+            alert('Form submitted successfully!');
 
         }
         </script>
