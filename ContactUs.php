@@ -82,8 +82,42 @@ session_start();
             </div>
         </div>
 
+        <script>
+            let nameRegex = /^[A-Z][a-z]{3,8}$/;
+            let emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            let messageRegex = /^[a-zA-Z ]{5,}$/;
 
+            function validateForm() {
+            let nameInput = document.getElementById('name');
+            let nameError = document.getElementById('nameError');
 
+            let emailInput = document.getElementById('email');
+            let emailError = document.getElementById('emailError');
+            
+            let messageInput = document.getElementById('message');
+            let messageError = document.getElementById('messageError');
+
+            nameError.innerText = '';
+            emailError.innerText = '';
+            messageError.innerText = '';
+
+            if (!nameRegex.test(nameInput.value)) {
+                nameError.innerText = 'Invalid name';
+                return false;
+            }
+            if (!emailRegex.test(emailInput.value)) {
+                emailError.innerText = 'Invalid email';
+                return false;
+            }
+            if (!messageRegex.test(messageInput.value)) {
+                messageError.innerText = 'Invalid message';
+                return false;
+            }
+
+            return true;
+
+        }
+        </script>
     </main>
 
     <?php include("footer.php")?>
