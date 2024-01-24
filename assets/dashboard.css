@@ -1,13 +1,14 @@
-.titulli {
+/* .titulli {
     text-align: center;
     color: #333;
+    display: flex;
     text-align: center;
 }
 
 .permbjtja-dashboard {
-    background-color: #fff;
+    background-color: #dfc8c8;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 100px;
     margin: 20px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -24,12 +25,8 @@
     color: #555;
 }
 
-.submission-date {
-    color: #888;
-}
-
 .hr {
     margin: 20px 0;
     border: 0;
     border-top: 1px solid #ddd;
-}
+} */
