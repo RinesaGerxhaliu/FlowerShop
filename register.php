@@ -3,34 +3,30 @@ include("header.php");
 include("inc/user.php");
 include("inc/db_connection.php");
 
-// Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Validate and sanitize inputs
+
     $username = htmlspecialchars($_POST['username']);
     $email = htmlspecialchars($_POST['email']);
     $password = htmlspecialchars($_POST['password']);
     $confirmPassword = htmlspecialchars($_POST['confirmPassword']);
 
-    // Check if necessary fields are not empty
     if (empty($username) || empty($email) || empty($password) || empty($confirmPassword)) {
         echo "All fields are required.";
     } else {
-        // Check if passwords match
+
         if ($password !== $confirmPassword) {
             echo "Passwords do not match.";
         } else {
-            // Create a database connection instance
+
             $dbConnection = DatabaseConnection::getInstance();
             $conn = $dbConnection->getConnection();
 
-            // Create a User instance
             $user = new User($conn);
 
-            // Check if the username is already taken
             if ($user->isUsernameTaken($username)) {
                 echo "Username already exists. Please choose a different one.";
             } else {
-                // Call the register method from the User class
+
                 if ($user->register($username, $email, $password)) {
                     header("Location: login.php");
                 } else {
@@ -38,7 +34,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
             }
 
-            // Close the database connection
             $dbConnection->closeConnection();
         }
     }

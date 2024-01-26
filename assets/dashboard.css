@@ -1,32 +1,5 @@
-/* .titulli {
-    text-align: center;
-    color: #333;
+.permbjtja-dashboard{
     display: flex;
-    text-align: center;
+    flex-direction: column;
+    background-color: bisque;
 }
-
-.permbjtja-dashboard {
-    background-color: #dfc8c8;
-    border: 1px solid #ddd;
-    border-radius: 100px;
-    margin: 20px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 50%;
-}
-
-.emri {
-    font-size: 24px;
-    color: #333;
-}
-
-.permbajtja {
-    margin-bottom: 10px;
-    color: #555;
-}
-
-.hr {
-    margin: 20px 0;
-    border: 0;
-    border-top: 1px solid #ddd;
-} */

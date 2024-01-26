@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,20 +16,19 @@
     <link rel="stylesheet" href="./assets/login.css">
     <link rel="stylesheet" href="./assets/register.css">
     <link rel="stylesheet" href="./assets/dashboard.css">
-    
 
     <link rel="stylesheet" href="assets/AU.css">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
         integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
-    <script src="script.js" defer></script>
+    <script src="./assets/script.js" defer></script>
 </head>
 
 <body>
     <div class="mbiheader">
-        <p>Same day Aucland delivery orders placed before 1pm weekdays</p>
+        <p>Same day Auckland delivery orders placed before 1 pm weekdays</p>
     </div>
-<header>
+    <header>
         <div class="headeri">
             <a href="Homepage.php"><img src="./images/blumenshop_com_logo.svg" class="logo"></a>
             <div class="menu-toggle" id="mobile-menu">
@@ -51,15 +54,18 @@
             <a href="ContactUs.php">
                 <li>Contact Us</li>
             </a>
+
             <?php
-            // Check if the user is not logged in
             if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
                 echo '<a href="dashboard.php"><li>Dashboard</li></a>';
                 echo '<a href="logout.php"><li>Logout</li></a>';
             } else {
-                // Display the "Sign In" link for non-logged-in users
                 echo '<a href="login.php"><li>Sign In</li></a>';
             }
+            if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
+                echo '<a href="profile.php"><li><i class="fa-solid fa-user"></i>' . $_SESSION['username'] . '</li></a>';
+            }
             ?>
+
         </ul>
     </header>

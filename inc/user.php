@@ -1,43 +1,43 @@
 <?php
 
-class User {
+class User
+{
     private $db;
 
-    public function __construct($db) {
+    public function __construct($db)
+    {
         $this->db = $db;
     }
 
-    public function register($username, $email, $password) {
-        // Hash the password
+    public function register($username, $email, $password, $role = 'user')
+    {
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-        // Insert user data into the database
-        $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$hashedPassword')";
+        $sql = "INSERT INTO users (username, email, password, role) VALUES ('$username', '$email', '$hashedPassword', '$role')";
 
         if ($this->db->query($sql) === TRUE) {
-            return true; // Registration successful
+            return true;
         } else {
-            return false; // Registration failed
+            return false;
         }
     }
 
-    public function login($username, $password) {
-        // Retrieve the hashed password from the database based on the provided username
-        $stmt = $this->db->prepare("SELECT * FROM users WHERE username = ?");
+    public function login($username, $password)
+    {
+        $stmt = $this->db->prepare("SELECT id, password, email, role FROM users WHERE username = ?");
         $stmt->bind_param("s", $username);
         $stmt->execute();
         $result = $stmt->get_result();
-
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
             $hashedPassword = $row['password'];
 
-            // Use password_verify to check if the entered password matches the hashed password
             if (password_verify($password, $hashedPassword)) {
-                // Start a session and set the 'logged_in' variable to true
                 session_start();
                 $_SESSION['logged_in'] = true;
-                $_SESSION['username'] = $username; // Optionally store username in session
+                $_SESSION['user_id'] = $row['id'];
+                $_SESSION['username'] = $username;
+                $_SESSION['role'] = $row['role'];
                 return true;
             }
         }
@@ -45,8 +45,8 @@ class User {
         return false;
     }
 
-    public function isUsernameTaken($username) {
-        // Check if the username is already taken in the database
+    public function isUsernameTaken($username)
+    {
         $stmt = $this->db->prepare("SELECT * FROM users WHERE username = ?");
         $stmt->bind_param("s", $username);
         $stmt->execute();
@@ -54,14 +54,68 @@ class User {
 
         return $result->num_rows > 0;
     }
-    
-    public function logout() {
-        // Unset all session variables
+
+    public function logout()
+    {
         $_SESSION = array();
-    
-        // Destroy the session
         session_destroy();
     }
-    
+
+    public function getAllUsers()
+    {
+        $users = array();
+
+        $result = $this->db->query("SELECT id, username, email FROM users");
+
+        if ($result) {
+            while ($row = $result->fetch_assoc()) {
+                $users[] = $row;
+            }
+
+            $result->free();
+        }
+
+        return $users;
+    }
+
+    public function getUserById($userId)
+    {
+        $sql = "SELECT * FROM users WHERE id = ?";
+        $stmt = $this->db->prepare($sql);
+        $stmt->bind_param("i", $userId);
+
+        if ($stmt->execute()) {
+            $result = $stmt->get_result();
+
+            if ($result->num_rows > 0) {
+                $user = $result->fetch_assoc();
+                return $user;
+            } else {
+                return null;
+            }
+        } else {
+            return null;
+        }
+    }
+
+    public function updateUser($userId, $username, $email, $password = null)
+    {
+        $sql = "UPDATE users SET username = '$username', email = '$email' WHERE id = $userId";
+        $result = $this->db->query($sql);
+
+        if ($password !== null) {
+            $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+            $sqlPassword = "UPDATE users SET password = '$hashedPassword' WHERE id = $userId";
+            $resultPassword = $this->db->query($sqlPassword);
+        }
+
+        return $result && (!$password || $resultPassword);
+    }
+
+    public function deleteUser($userId)
+    {
+        $sql = "DELETE FROM users WHERE id = $userId";
+        return $this->db->query($sql);
+    }
 }
 ?>

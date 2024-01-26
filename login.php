@@ -1,5 +1,4 @@
 <?php
-session_start(); // Start the session
 
 include("header.php");
 include("inc/user.php");
@@ -9,21 +8,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = htmlspecialchars($_POST['username']);
     $password = htmlspecialchars($_POST['password']);
 
-    // Create a database connection instance
     $dbConnection = DatabaseConnection::getInstance();
     $conn = $dbConnection->getConnection();
 
-    // Create a User instance
     $user = new User($conn);
 
-    // Call the login method from the User class
     if ($user->login($username, $password)) {
         header("Location: Homepage.php");
     } else {
         echo "Invalid username or password.";
     }
 
-    // Close the database connection
     $dbConnection->closeConnection();
 }
 ?>
@@ -62,10 +57,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             errorMessage.textContent = 'Username and password are required.';
             return false;
         }
-
-        // alert('Form submitted successfully!');
         return true;
     }
 </script>
 
-<?php include("footer.php")?>
+<?php include("footer.php") ?>

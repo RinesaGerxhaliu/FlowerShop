@@ -42,14 +42,10 @@
     cursor: pointer;
   }
 
-  .hrline{
-    /* margin: 0 80px; */
-  }
-
   .OrderFlowers{
     display: flex;
     flex-direction: row;
-    margin: 80px;
+    margin: 20px 80px;
   }
 
   .imageInside{

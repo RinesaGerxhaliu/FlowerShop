@@ -1,10 +1,12 @@
 <?php
 
-class DatabaseConnection {
+class DatabaseConnection
+{
     private static $instance = null;
     private $conn;
 
-    private function __construct() {
+    private function __construct()
+    {
         $this->host = "localhost";
         $this->username = "root";
         $this->password = "";
@@ -17,22 +19,26 @@ class DatabaseConnection {
         }
     }
 
-    public static function getInstance() {
+    public static function getInstance()
+    {
         if (self::$instance === null) {
             self::$instance = new self();
         }
         return self::$instance;
     }
 
-    public function getConnection() {
+    public function getConnection()
+    {
         return $this->conn;
     }
 
-    public function closeConnection() {
+    public function closeConnection()
+    {
         $this->conn->close();
     }
 
-    public function query($sql) {
+    public function query($sql)
+    {
         return $this->conn->query($sql);
     }
 }

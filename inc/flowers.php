@@ -1,12 +1,15 @@
 <?php
-class Flower {
+class Flower
+{
     private $db;
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->db = DatabaseConnection::getInstance()->getConnection();
     }
 
-    public function getAllFlowers() {
+    public function getAllFlowers()
+    {
         $sql = "SELECT * FROM flowers";
         $result = $this->db->query($sql);
 
@@ -17,7 +20,8 @@ class Flower {
         }
     }
 
-    public function getFirstFourFlowers() {
+    public function getFirstFourFlowers()
+    {
         $sql = "SELECT * FROM flowers LIMIT 4";
         $result = $this->db->query($sql);
 
