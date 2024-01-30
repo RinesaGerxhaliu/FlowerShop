@@ -1,39 +1,71 @@
+.format {
+    display: flex;
+    justify-content: center;
+}
+
+.forma1,
+.forma2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px; 
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    margin: 20px;
+    box-sizing: border-box;
+}
 
 .editP {
     text-align: center;
     color: #333;
 }
 
-form {
-    max-width: 400px;
-    margin: 20px auto;
+
+.forma {
+    width: 100%;
 }
 
-label {
+.labelat {
     display: block;
     margin: 10px 0;
     font-weight: bold;
 }
 
-input[type="text"],
-input[type="number"],
-select,
-input[type="file"] {
+.inputi,
+.kategoria,
+.inputi {
     width: 100%;
     padding: 8px;
     margin: 8px 0;
     box-sizing: border-box;
 }
 
-input[type="submit"] {
+.submit {
     background-color: #baa963;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 15px;
 }
 
-input[type="submit"]:hover {
+.submit:hover {
+    background-color: #baa963;
+}
+
+.submit1 {
+    background-color: #baa963;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 104px;
+    text-align: center;
+}
+
+.submit1:hover {
     background-color: #baa963;
 }

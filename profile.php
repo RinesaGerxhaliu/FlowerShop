@@ -27,34 +27,39 @@ if ($_SESSION['logged_in']) {
 
     ?>
     
+<div class="format">
+   <div class="forma1">
     <h1 class="editP">Edit Profile</h1>
     <form method="post" class="forma" action="?action=update&user_id=<?= $userId ?>">
         <label for="new_username" class="labelat">New Username:</label>
-        <input type="text" class="labelat" name="new_username" value="<?= $userToEdit["username"] ?>">
+        <input type="text" class="inputi" name="new_username" value="<?= $userToEdit["username"] ?>">
         <label for="new_email" class="labelat">New Email:</label>
-        <input type="email" class="labelat" name="new_email" value="<?= $userToEdit["email"] ?>">
+        <input type="email" class="inputi" name="new_email" value="<?= $userToEdit["email"] ?>">
         <label for="new_password" class="labelat">New Password:</label>
-        <input type="password" name="new_password" class="labelat">
-        <input type="submit" name="update_user" value="Update Profile">
+        <input type="password" class="inputi" name="new_password">
+        <input type="submit1" class="submit1" name="update_user" value="Update Profile">
     </form>
+   </div>
 
+   <div class="forma2">
     <h1 class="editP">Add Flower</h1>
-    <form method="post" action="?action=add_flower&user_id=<?= $userId ?>">
-        <label for="flower_name">Flower Name:</label>
-        <input type="text" name="flower_name" required>
-        <label for="price">Price:</label>
-        <input type="number" name="price" step="0.01" required>
-        <label for="category">Category:</label>
-        <select name="category" required>
+    <form method="post" class="forma" action="?action=add_flower&user_id=<?= $userId ?>">
+        <label class="labelat" for="flower_name">Flower Name:</label>
+        <input class="inputi" type="text" name="flower_name" required>
+        <label class="labelat" for="price">Price:</label>
+        <input class="inputi" type="number" name="price" step="0.01" required>
+        <label class="labelat" for="category">Category:</label>
+        <select class="kategoria "name="category" required>
             <option value="best_seller">Best Seller</option>
             <option value="winter_collection">Winter Collection</option>
             <option value="plants_trees_collection">Plants & Trees Collection</option>
             <option value="dried_flowers_collection">Dried Flowers Collection</option>
         </select>
-        <label for="image">Image URL:</label>
-        <input type="file" name="image" id="fileToUpload" required>
-        <input type="submit" name="add_flower" value="Add Flower">
+        <label class="labelat" for="image">Image URL:</label>
+        <input class="labelat" type="file" name="image" id="fileToUpload" required>
+        <input class="submit" type="submit" name="add_flower" value="Add Flower">
     </form>
+   </div>
 </div>
 
     <?php
