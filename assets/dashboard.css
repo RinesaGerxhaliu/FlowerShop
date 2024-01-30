@@ -3,3 +3,13 @@
     flex-direction: column;
     background-color: bisque;
 }
+.flowers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;    
+    justify-content: flex-start;
+    margin: 90px 60px;
+}
+.flowers .imageshop{
+    width: 300px;
+}

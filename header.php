@@ -15,6 +15,7 @@ session_start();
     <link rel="stylesheet" href="./assets/winterCollection.css">
     <link rel="stylesheet" href="./assets/login.css">
     <link rel="stylesheet" href="./assets/register.css">
+    <link rel="stylesheet" href="./assets/profile.css">
     <link rel="stylesheet" href="./assets/dashboard.css">
 
     <link rel="stylesheet" href="assets/AU.css">

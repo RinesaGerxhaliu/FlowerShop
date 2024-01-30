@@ -54,7 +54,8 @@ class ContactForm
         $stmt->bind_param("i", $contactId);
 
         if ($stmt->execute()) {
-            echo 'Contact deleted successfully!';
+            header("Location: dashboard.php");
+
         } else {
             echo "Error deleting contact. Please try again later.";
         }
