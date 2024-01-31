@@ -148,6 +148,15 @@ header ul li {
   margin-top: 50px;
 }
 
+.flower-imgg{
+  width: 300px;
+}
+.flower-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .rubrika img {
   width: 100%;
   object-fit: cover;
@@ -156,7 +165,7 @@ header ul li {
 
 .rubrika {
   margin: 0 15px;
-  width: auto;
+  width: 25%;
   overflow: hidden;
 }
 

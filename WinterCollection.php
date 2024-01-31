@@ -1,12 +1,50 @@
 <?php
-include("header.php") ?>
+include("header.php");
+include("inc/db_connection.php");
+include("inc/user.php");
+include("inc/flowers.php");
+
+$dbConnection = DatabaseConnection::getInstance();
+$conn = $dbConnection->getConnection();
+$flowers = new Flower();
+$user = new User($conn);
+
+$flowersByCategoryWinter = $flowers->getFlowersByCategory("winter_collection");
+?>
+
 <main>
 
     <div class="firstImage">
         <img src="./images/winterc2.jpg" alt="">
     </div>
 
-    <div class="collection-winterC">
+    <div class="flowers">
+        <?php foreach ($flowersByCategoryWinter as $flower): ?>
+            <div class="imageshop">
+                <img class="imageshop-img" src="./images/<?= $flower['image'] ?>" alt="bestsell1">
+                <div class="underimgg">
+                    <a href="SingleFlower.php?flower_id=<?= $flower['flower_id'] ?>">
+                        <?= $flower['flower_name'] ?>
+                    </a>
+                    <p id="cmimi">$
+                        <?= $flower['price'] ?>
+                    </p>
+                    
+                </div>
+            <div class="underimage-added">
+                <p>Added on:
+                    <?= $flower['added_date'] ?>
+                </p>
+                <p>Added by:
+                    <?= $user->getUserById($flower['addedbyuser'])['username'] ?>
+                </p>
+
+             </div>
+         </div>
+       <?php endforeach; ?>
+    </div>
+
+    <!-- <div class="collection-winterC">
         <div class="collection-fotot">
             <div class="imageshop">
                 <img src="./images/wintercol2.avif" alt="winterc3">
@@ -108,7 +146,7 @@ include("header.php") ?>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- <hr class="hrline"> -->
 

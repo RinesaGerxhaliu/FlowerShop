@@ -8,14 +8,16 @@
     flex-wrap: wrap;
     flex-direction: row;    
     justify-content: flex-start;
-    margin: 90px 60px;
+    margin: 37px 60px;
     padding: 0  20px;
 }
 .flowers .imageshop{
     width: 300px;
     margin: 0 19px;
 }
-
+.cmimi{
+    font-size: 10px;
+}
 .underimgg{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: flex;
@@ -27,15 +29,35 @@
 }
 
 .underimgg a{
-    margin-top: 10px;
+    margin-top: 15px;
     text-decoration: none;
     color: rgb(21, 21, 21);
 }
 
-.underimage-added{
-    /* display: flex;
-    flex-direction: row;
-    /* border-bottom: 1px solid rgb(189, 186, 186);
-    font-size: 15px; */ 
-    /* font-family: Arial, Helvetica, sans-serif; */
+.titulli{
+    text-align: center;
+}
+
+.butonat{
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-button{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.edit-button{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(35, 175, 129);
+    margin-left: 130px;
+}
+
+.view-button{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(95, 109, 31);
+    
 }

@@ -87,10 +87,13 @@ if ($_SESSION['role'] === 'admin') {
                         <?= $flower['price'] ?>
                     </p>
                 </div>
+
+                <div class="butonat">
                 <a href="?action=delete_flower&flower_id=<?= $flower['flower_id'] ?>" class="delete-button"
                     style="color: red; margin-right: 10px">Delete</a>
-                <a href="#">Edit</a>
-                <a href="SingleFlower.php?flower_id=<?= $flower['flower_id'] ?>">View</a>
+                <a href="#" class="edit-button">Edit</a>
+                <a href="SingleFlower.php?flower_id=<?= $flower['flower_id'] ?>" class="view-button">View</a>
+                </div>
                 <p>Added on:
                     <?= $flower['added_date'] ?>
                 </p>

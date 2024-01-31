@@ -23,6 +23,7 @@ session_start();
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
         integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
     <script src="./assets/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -64,7 +65,8 @@ session_start();
                 echo '<a href="login.php"><li>Sign In</li></a>';
             }
             if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
-                echo '<a href="profile.php"><li><i class="fa-solid fa-user"></i>' . $_SESSION['username'] . '</li></a>';
+                echo '<a href="profile.php"><li><i class="fa fa-user"></i>
+                ' . $_SESSION['username'] . '</li></a>';
             }
             ?>
 

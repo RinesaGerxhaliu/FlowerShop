@@ -59,6 +59,7 @@ img {
   margin: 90px 90px;
 }
 
+
 .imageshop-img{
   width: 100%;
   object-fit: cover;
@@ -84,6 +85,7 @@ img {
   transform: scale(1.07);
   cursor: pointer;
 }
+
 
 .footermain {
   background-color: rgb(54, 73, 54);
