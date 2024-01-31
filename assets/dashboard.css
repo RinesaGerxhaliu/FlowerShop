@@ -41,8 +41,8 @@
     padding: 0  20px;
 }
 .flowers .imageshop{
-    width: 300px;
-    margin: 0 19px;
+    width: 330px;
+    margin: 0 25px;
 }
 .cmimi{
     font-size: 10px;
@@ -90,3 +90,11 @@
     color: rgb(95, 109, 31);
     
 }
+
+@media only screen and (max-width: 600px) {
+    .flowers {
+      margin: 46px -1px; 
+    }
+
+    
+  }

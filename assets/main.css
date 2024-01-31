@@ -188,6 +188,14 @@ img {
     margin-right: 0;
   }
 
+  .flowers{
+    width: 100%;
+  }
+
+  .imageshop{
+    margin: 0 -46px;
+  }
+
   .collection-fotot {
     flex-direction: column;
     margin: 20px 0;

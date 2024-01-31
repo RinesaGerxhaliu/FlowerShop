@@ -602,6 +602,7 @@ header ul li {
     justify-content: space-between;
     display: flex;
     margin: 0;
+    width: 100%;
   }
 
   header {
@@ -665,8 +666,9 @@ header ul li {
   }
 
   .site-desc a {
-    width: 100%;
+    width: 70%;
     text-align: center;
+    margin-left: 38px;
   }
 
   .site-desc {
@@ -678,7 +680,7 @@ header ul li {
   .site-desc h2 {
     font-size: 40px;
     margin-top: 30px;
-    margin-left: 0px;
+    margin-left: 43px;
   }
 
   .main-fillimi {
@@ -757,6 +759,11 @@ header ul li {
     margin: 0;
   }
 
+  .rubrika{
+    width: 90%;
+    margin-left: 20px;
+  }
+
   .mrenafooter {
     flex-direction: column;
     margin: 0;
@@ -788,9 +795,10 @@ header ul li {
   }
 
   .insta-feed {
+    width: 100%;
     margin: 0;
-    padding: 20px;
-    width: auto;
+    padding: 12px;
+  
   }
 
   .images-container {

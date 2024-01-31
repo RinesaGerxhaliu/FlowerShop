@@ -55,7 +55,7 @@ if ($_SESSION['logged_in']) {
             <option value="plants_trees_collection">Plants & Trees Collection</option>
             <option value="dried_flowers_collection">Dried Flowers Collection</option>
         </select>
-        <label class="labelat" for="image">Image URL:</label>
+        <label class="labelat" for="image">Image:</label>
         <input class="labelat" type="file" name="image" id="fileToUpload" required>
         <input class="submit" type="submit" name="add_flower" value="Add Flower">
     </form>

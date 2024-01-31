@@ -24,6 +24,7 @@
 
 .forma {
     width: 100%;
+    margin-right: 120px;
 }
 
 .labelat {
@@ -68,4 +69,16 @@
 
 .submit1:hover {
     background-color: #baa963;
+}
+
+@media only screen and (max-width: 600px) {
+
+.format{
+    display: flex;
+    flex-direction: column;
+}
+
+.editP{
+    margin-right: 120px;
+}
 }
