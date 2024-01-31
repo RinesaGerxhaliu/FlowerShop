@@ -10,7 +10,9 @@ $flowers = new Flower();
 $user = new User($conn);
 
 $flowersByCategoryBestSellers = $flowers->getFlowersByCategory("best_seller");
+$flowersByCategoryPlants = $flowers->getFlowersByCategory("plants_trees_collection");
 $flowersByCategoryWinter = $flowers->getFlowersByCategory("winter_collection");
+$flowersByCategoryDried = $flowers->getFlowersByCategory("dried_flowers_collection");
 
 ?>
 
@@ -39,24 +41,28 @@ $flowersByCategoryWinter = $flowers->getFlowersByCategory("winter_collection");
         <?php foreach ($flowersByCategoryBestSellers as $flower): ?>
             <div class="imageshop">
                 <img class="imageshop-img" src="./images/<?= $flower['image'] ?>" alt="bestsell1">
-                <div class="underimg">
+                <div class="underimgg">
                     <a href="SingleFlower.php?flower_id=<?= $flower['flower_id'] ?>">
                         <?= $flower['flower_name'] ?>
-        </a>
+                    </a>
                     <p id="cmimi">$
                         <?= $flower['price'] ?>
                     </p>
+                    
                 </div>
+            <div class="underimage-added">
                 <p>Added on:
                     <?= $flower['added_date'] ?>
                 </p>
                 <p>Added by:
                     <?= $user->getUserById($flower['addedbyuser'])['username'] ?>
                 </p>
-            </div>
-        <?php endforeach; ?>
-</div>
-    <div class="collection-fotot">
+
+             </div>
+         </div>
+       <?php endforeach; ?>
+    </div>
+    <!-- <div class="collection-fotot">
         <div class="imageshop">
             <img class="imageshop-img" src="./images/bestsell1.png" alt="bestsell1">
             <div class="underimg">
@@ -122,13 +128,41 @@ $flowersByCategoryWinter = $flowers->getFlowersByCategory("winter_collection");
                 <p id="cmimi">$54</p>
             </div>
         </div>
-    </div>
-
+    </div> -->
+    
+    
     <div class="collection">
         <p>Plants & Trees Collection</p>
     </div>
 
-    <div class="collection-fotot">
+    <div class="flowers">
+        <?php foreach ($flowersByCategoryPlants as $flower): ?>
+            <div class="imageshop">
+                <img class="imageshop-img" src="./images/<?= $flower['image'] ?>" alt="bestsell1">
+                <div class="underimgg">
+                    <a href="SingleFlower.php?flower_id=<?= $flower['flower_id'] ?>">
+                        <?= $flower['flower_name'] ?>
+                    </a>
+                    <p id="cmimi">$
+                        <?= $flower['price'] ?>
+                    </p>
+                    
+                </div>
+            <div class="underimage-added">
+                <p>Added on:
+                    <?= $flower['added_date'] ?>
+                </p>
+                <p>Added by:
+                    <?= $user->getUserById($flower['addedbyuser'])['username'] ?>
+                </p>
+
+             </div>
+         </div>
+       <?php endforeach; ?>
+    </div>
+
+
+    <!-- <div class="collection-fotot">
         <div class="imageshop">
             <img src="./images/tree1.webp" alt="tree1" style="width: 100%;">
             <div class="underimg">
@@ -160,9 +194,9 @@ $flowersByCategoryWinter = $flowers->getFlowersByCategory("winter_collection");
                 <p id="cmimi">$37</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="collection-fotot">
+    <!-- <div class="collection-fotot">
         <div class="imageshop">
             <img src="./images/plant1.webp" alt="plant1">
             <div class="underimg">
@@ -194,9 +228,9 @@ $flowersByCategoryWinter = $flowers->getFlowersByCategory("winter_collection");
                 <p id="cmimi">$44</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="collection-fotot">
+    <!-- <div class="collection-fotot">
         <div class="imageshop">
             <img src="./images/plant5.webp" alt="plant4">
             <div class="underimg">
@@ -228,13 +262,39 @@ $flowersByCategoryWinter = $flowers->getFlowersByCategory("winter_collection");
                 <p id="cmimi">$98</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="collection">
         <p>Winter Collection</p>
     </div>
 
-    <div class="collection-fotot">
+    <div class="flowers">
+        <?php foreach ($flowersByCategoryWinter as $flower): ?>
+            <div class="imageshop">
+                <img class="imageshop-img" src="./images/<?= $flower['image'] ?>" alt="bestsell1">
+                <div class="underimgg">
+                    <a href="SingleFlower.php?flower_id=<?= $flower['flower_id'] ?>">
+                        <?= $flower['flower_name'] ?>
+                    </a>
+                    <p id="cmimi">$
+                        <?= $flower['price'] ?>
+                    </p>
+                    
+                </div>
+            <div class="underimage-added">
+                <p>Added on:
+                    <?= $flower['added_date'] ?>
+                </p>
+                <p>Added by:
+                    <?= $user->getUserById($flower['addedbyuser'])['username'] ?>
+                </p>
+
+             </div>
+         </div>
+       <?php endforeach; ?>
+    </div>
+
+    <!-- <div class="collection-fotot">
         <div class="imageshop">
             <img src="./images/a8.webp" alt="" class="img1" style="width: 100%;">
             <div class="underimg">
@@ -266,9 +326,9 @@ $flowersByCategoryWinter = $flowers->getFlowersByCategory("winter_collection");
                 <p id="cmimi">$47</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="collection-fotot">
+    <!-- <div class="collection-fotot">
         <div class="imageshop">
             <img src="./images/a5.webp" alt="" class="img1">
             <div class="underimg">
@@ -300,13 +360,39 @@ $flowersByCategoryWinter = $flowers->getFlowersByCategory("winter_collection");
                 <p id="cmimi">$54</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="collection">
         <p>Dried Flowers Collection</p>
     </div>
 
-    <div class="collection-fotot">
+    <div class="flowers">
+        <?php foreach ($flowersByCategoryDried as $flower): ?>
+            <div class="imageshop">
+                <img class="imageshop-img" src="./images/<?= $flower['image'] ?>" alt="bestsell1">
+                <div class="underimgg">
+                    <a href="SingleFlower.php?flower_id=<?= $flower['flower_id'] ?>">
+                        <?= $flower['flower_name'] ?>
+                    </a>
+                    <p id="cmimi">$
+                        <?= $flower['price'] ?>
+                    </p>
+                    
+                </div>
+            <div class="underimage-added">
+                <p>Added on:
+                    <?= $flower['added_date'] ?>
+                </p>
+                <p>Added by:
+                    <?= $user->getUserById($flower['addedbyuser'])['username'] ?>
+                </p>
+
+             </div>
+         </div>
+       <?php endforeach; ?>
+    </div>
+
+    <!-- <div class="collection-fotot">
         <div class="imageshop">
             <img src="./images/driedf`.webp" alt="" class="img1" style="width: 100%;">
             <div class="underimg">
@@ -338,7 +424,7 @@ $flowersByCategoryWinter = $flowers->getFlowersByCategory("winter_collection");
                 <p id="cmimi">$47</p>
             </div>
         </div>
-    </div>
+    </div> -->
     </div>
 </main>
 

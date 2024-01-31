@@ -55,7 +55,7 @@ if ($_SESSION['role'] === 'admin') {
     $allUsers = $user->getAllUsers();
 
     echo '<h1 class="titulli">User Dashboard</h1>';
-    foreach ($allUsers as $currentUser): // Changed the loop variable name to avoid conflicts
+    foreach ($allUsers as $currentUser): 
         ?>
         <div class="permbjtja-dashboard">
             <h1 class="emri">

@@ -9,7 +9,33 @@
     flex-direction: row;    
     justify-content: flex-start;
     margin: 90px 60px;
+    padding: 0  20px;
 }
 .flowers .imageshop{
     width: 300px;
+    margin: 0 19px;
+}
+
+.underimgg{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+  border-bottom: 1px solid rgb(189, 186, 186);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.underimgg a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(21, 21, 21);
+}
+
+.underimage-added{
+    /* display: flex;
+    flex-direction: row;
+    /* border-bottom: 1px solid rgb(189, 186, 186);
+    font-size: 15px; */ 
+    /* font-family: Arial, Helvetica, sans-serif; */
 }

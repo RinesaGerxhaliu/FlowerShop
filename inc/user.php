@@ -89,14 +89,14 @@ class User
     
             if ($result->num_rows > 0) {
                 $user = $result->fetch_assoc();
-                $stmt->close(); // Close the statement
+                $stmt->close(); 
                 return $user;
             } else {
-                $stmt->close(); // Close the statement
+                $stmt->close(); 
                 return null;
             }
         } else {
-            $stmt->close(); // Close the statement
+            $stmt->close();
             return null;
         }
     }

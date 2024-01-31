@@ -12,8 +12,8 @@
     padding: 20px;
     /* border: 1px solid #ccc; */
     border-radius: 8px;
-    margin: 20px;
     box-sizing: border-box;
+    margin: 0 60px;
 }
 
 .editP {
