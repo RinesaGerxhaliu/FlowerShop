@@ -58,14 +58,16 @@ public function getFlowerById($flowerId)
         return $stmt->execute();
     }
 
-    public function updateFlower($flowerId, $flowerName, $price, $image, $category)
+    public function updateFlower($flowerId, $flowerName, $price, $category, $image)
     {
-        $sql = "UPDATE flowers SET flower_name = ?, price = ?, image = ?, category = ? WHERE flower_id = ?";
+        $sql = "UPDATE flowers SET flower_name = ?, price = ?, category = ?, image = ? WHERE flower_id = ?";
         $stmt = $this->db->prepare($sql);
-        $stmt->bind_param("sdsis", $flowerName, $price, $image, $flowerId, $category);
-
+        $stmt->bind_param("sdssi", $flowerName, $price, $category, $image, $flowerId);
+    
         return $stmt->execute();
     }
+    
+    
 
     public function deleteFlower($flowerId)
     {
@@ -110,6 +112,7 @@ public function getFlowerById($flowerId)
             return array();
         }
     }
+
 }
 
 ?>
