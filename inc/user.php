@@ -83,16 +83,16 @@ class User
         $sql = "SELECT id, username, email FROM users WHERE id = ?";
         $stmt = $this->db->prepare($sql);
         $stmt->bind_param("i", $userId);
-    
+
         if ($stmt->execute()) {
             $result = $stmt->get_result();
-    
+
             if ($result->num_rows > 0) {
                 $user = $result->fetch_assoc();
-                $stmt->close(); 
+                $stmt->close();
                 return $user;
             } else {
-                $stmt->close(); 
+                $stmt->close();
                 return null;
             }
         } else {
@@ -100,7 +100,7 @@ class User
             return null;
         }
     }
-    
+
 
     public function updateUser($userId, $username, $email, $password = null)
     {

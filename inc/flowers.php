@@ -19,7 +19,7 @@ class Flower
             return array();
         }
     }
-public function getFlowerById($flowerId)
+    public function getFlowerById($flowerId)
     {
         $sql = "SELECT * FROM flowers WHERE flower_id = ?";
         $stmt = $this->db->prepare($sql);
@@ -32,10 +32,10 @@ public function getFlowerById($flowerId)
                 $flower = $result->fetch_assoc();
                 return $flower;
             } else {
-                return null; 
+                return null;
             }
         } else {
-            return null; 
+            return null;
         }
     }
     public function getFirstFourFlowers()
@@ -63,18 +63,18 @@ public function getFlowerById($flowerId)
         $sql = "UPDATE flowers SET flower_name = ?, price = ?, category = ?, image = ? WHERE flower_id = ?";
         $stmt = $this->db->prepare($sql);
         $stmt->bind_param("sdssi", $flowerName, $price, $category, $image, $flowerId);
-    
+
         return $stmt->execute();
     }
-    
-    
+
+
 
     public function deleteFlower($flowerId)
     {
         $sql = "DELETE FROM flowers WHERE flower_id = ?";
         $stmt = $this->db->prepare($sql);
         $stmt->bind_param("i", $flowerId);
-    
+
         if ($stmt->execute()) {
             header("Location: dashboard.php");
 
@@ -90,7 +90,7 @@ public function getFlowerById($flowerId)
         $stmt->execute();
 
         $result = $stmt->get_result();
-        
+
         if ($result->num_rows > 0) {
             return $result->fetch_all(MYSQLI_ASSOC);
         } else {

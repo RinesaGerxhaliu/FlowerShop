@@ -48,22 +48,22 @@ $flowersByCategoryDried = $flowers->getFlowersByCategory("dried_flowers_collecti
                     <p id="cmimi">$
                         <?= $flower['price'] ?>
                     </p>
-                    
-                </div>
-            <div class="underimage-added">
-                <p>Added on:
-                    <?= $flower['added_date'] ?>
-                </p>
-                <p>Added by:
-                    <?= $user->getUserById($flower['addedbyuser'])['username'] ?>
-                </p>
 
-             </div>
-         </div>
-       <?php endforeach; ?>
+                </div>
+                <div class="underimage-added">
+                    <p>Added on:
+                        <?= $flower['added_date'] ?>
+                    </p>
+                    <p>Added by:
+                        <?= $user->getUserById($flower['addedbyuser'])['username'] ?>
+                    </p>
+
+                </div>
+            </div>
+        <?php endforeach; ?>
     </div>
 
-    
+
     <div class="collection">
         <p>Plants & Trees Collection</p>
     </div>
@@ -79,19 +79,19 @@ $flowersByCategoryDried = $flowers->getFlowersByCategory("dried_flowers_collecti
                     <p id="cmimi">$
                         <?= $flower['price'] ?>
                     </p>
-                    
-                </div>
-            <div class="underimage-added">
-                <p>Added on:
-                    <?= $flower['added_date'] ?>
-                </p>
-                <p>Added by:
-                    <?= $user->getUserById($flower['addedbyuser'])['username'] ?>
-                </p>
 
-             </div>
-         </div>
-       <?php endforeach; ?>
+                </div>
+                <div class="underimage-added">
+                    <p>Added on:
+                        <?= $flower['added_date'] ?>
+                    </p>
+                    <p>Added by:
+                        <?= $user->getUserById($flower['addedbyuser'])['username'] ?>
+                    </p>
+
+                </div>
+            </div>
+        <?php endforeach; ?>
     </div>
 
     <div class="collection">
@@ -109,19 +109,19 @@ $flowersByCategoryDried = $flowers->getFlowersByCategory("dried_flowers_collecti
                     <p id="cmimi">$
                         <?= $flower['price'] ?>
                     </p>
-                    
-                </div>
-            <div class="underimage-added">
-                <p>Added on:
-                    <?= $flower['added_date'] ?>
-                </p>
-                <p>Added by:
-                    <?= $user->getUserById($flower['addedbyuser'])['username'] ?>
-                </p>
 
-             </div>
-         </div>
-       <?php endforeach; ?>
+                </div>
+                <div class="underimage-added">
+                    <p>Added on:
+                        <?= $flower['added_date'] ?>
+                    </p>
+                    <p>Added by:
+                        <?= $user->getUserById($flower['addedbyuser'])['username'] ?>
+                    </p>
+
+                </div>
+            </div>
+        <?php endforeach; ?>
     </div>
 
     <div class="collection">
@@ -139,19 +139,19 @@ $flowersByCategoryDried = $flowers->getFlowersByCategory("dried_flowers_collecti
                     <p id="cmimi">$
                         <?= $flower['price'] ?>
                     </p>
-                    
-                </div>
-            <div class="underimage-added">
-                <p>Added on:
-                    <?= $flower['added_date'] ?>
-                </p>
-                <p>Added by:
-                    <?= $user->getUserById($flower['addedbyuser'])['username'] ?>
-                </p>
 
-             </div>
-         </div>
-       <?php endforeach; ?>
+                </div>
+                <div class="underimage-added">
+                    <p>Added on:
+                        <?= $flower['added_date'] ?>
+                    </p>
+                    <p>Added by:
+                        <?= $user->getUserById($flower['addedbyuser'])['username'] ?>
+                    </p>
+
+                </div>
+            </div>
+        <?php endforeach; ?>
     </div>
     </div>
 </main>

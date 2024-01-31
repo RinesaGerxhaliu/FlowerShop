@@ -29,126 +29,20 @@ $flowersByCategoryWinter = $flowers->getFlowersByCategory("winter_collection");
                     <p id="cmimi">$
                         <?= $flower['price'] ?>
                     </p>
-                    
-                </div>
-            <div class="underimage-added">
-                <p>Added on:
-                    <?= $flower['added_date'] ?>
-                </p>
-                <p>Added by:
-                    <?= $user->getUserById($flower['addedbyuser'])['username'] ?>
-                </p>
 
-             </div>
-         </div>
-       <?php endforeach; ?>
+                </div>
+                <div class="underimage-added">
+                    <p>Added on:
+                        <?= $flower['added_date'] ?>
+                    </p>
+                    <p>Added by:
+                        <?= $user->getUserById($flower['addedbyuser'])['username'] ?>
+                    </p>
+
+                </div>
+            </div>
+        <?php endforeach; ?>
     </div>
-
-    <!-- <div class="collection-winterC">
-        <div class="collection-fotot">
-            <div class="imageshop">
-                <img src="./images/wintercol2.avif" alt="winterc3">
-                <div class="underimg">
-                    <p>Spring promise</p>
-                    <p id="cmimi">$102</p>
-                </div>
-            </div>
-
-            <div class="imageshop">
-                <img src="./images/wintercol3.avif" alt="winterc4">
-                <div class="underimg">
-                    <p>Natural classic - Large</p>
-                    <p id="cmimi">$106</p>
-                </div>
-            </div>
-
-            <div class="imageshop">
-                <img src="./images/winterCol1.avif" alt="winterc5">
-                <div class="underimg">
-                    <p>Serene Snow</p>
-                    <p id="cmimi">$90</p>
-                </div>
-            </div>
-
-            <div class="imageshop">
-                <img src="./images/sku7190389.avif" alt="winterc6">
-                <div class="underimg">
-                    <p>Tulip Spring</p>
-                    <p id="cmimi">$80</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="collection-fotot">
-            <div class="imageshop">
-                <img src="./images/wintercol4.avif" alt="winterc7">
-                <div class="underimg">
-                    <p>Violet Renewal - Medium</p>
-                    <p id="cmimi">$104</p>
-                </div>
-            </div>
-
-            <div class="imageshop">
-                <img src="./images/wintercol6.avif" alt="winterc8">
-                <div class="underimg">
-                    <p>Violet Renewal - Large</p>
-                    <p id="cmimi">$99</p>
-                </div>
-            </div>
-
-            <div class="imageshop">
-                <img src="./images/wintercol8.webp" alt="winterc9">
-                <div class="underimg">
-                    <p>Soft Tone Flowers</p>
-                    <p id="cmimi">$65</p>
-                </div>
-            </div>
-
-            <div class="imageshop">
-                <img src="./images/wintercol7.avif" alt="Flower4">
-                <div class="underimg">
-                    <p>81 Colorful Roses</p>
-                    <p id="cmimi">$84</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="collection-fotot">
-            <div class="imageshop">
-                <img src="./images/w4.webp" alt="winterc7">
-                <div class="underimg">
-                    <p>17 White Roses Bouquet</p>
-                    <p id="cmimi">$104</p>
-                </div>
-            </div>
-
-            <div class="imageshop">
-                <img src="./images/w3.webp" alt="winterc8">
-                <div class="underimg">
-                    <p>Bouquet of 101 White Roses</p>
-                    <p id="cmimi">$99</p>
-                </div>
-            </div>
-
-            <div class="imageshop">
-                <img src="./images/w2.webp" alt="winterc9">
-                <div class="underimg">
-                    <p>Soft Tone Flowers</p>
-                    <p id="cmimi">$65</p>
-                </div>
-            </div>
-
-            <div class="imageshop">
-                <img src="./images/w1.webp" alt="winterc11">
-                <div class="underimg">
-                    <p>81 Colorful Roses</p>
-                    <p id="cmimi">$84</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <hr class="hrline"> -->
 
     <div class="OrderFlowers" style="pading: 85px!important;">
 

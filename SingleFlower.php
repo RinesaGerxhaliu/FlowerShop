@@ -15,9 +15,13 @@ if (isset($_GET['flower_id'])) {
     if ($flowerDetails) {
         ?>
         <div class="flower-details">
-            <h1 class="titullii"><?= $flowerDetails['flower_name'] ?></h1>
+            <h1 class="titullii">
+                <?= $flowerDetails['flower_name'] ?>
+            </h1>
             <img class="flower-imgg" src="./images/<?= $flowerDetails['image'] ?>" alt="<?= $flowerDetails['flower_name'] ?>">
-            <p id="cmimi-lule">$<?= $flowerDetails['price'] ?></p>
+            <p id="cmimi-lule">$
+                <?= $flowerDetails['price'] ?>
+            </p>
         </div>
         <?php
     } else {

@@ -24,6 +24,6 @@ function nextSlide() {
   showSlide(slideIndex + 1);
 }
 
-document.getElementById('mobile-menu').addEventListener('click', function() {
-    document.querySelector('.listat').classList.toggle('show');
+document.getElementById("mobile-menu").addEventListener("click", function () {
+  document.querySelector(".listat").classList.toggle("show");
 });
