@@ -1,8 +1,37 @@
-.permbjtja-dashboard{
-    display: flex;
-    flex-direction: column;
-    background-color: bisque;
+
+.titulli {
+    text-align: center;
+    color: #333;
 }
+
+.permbjtja-dashboard {
+    width: 30%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.emri {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.permbajtja {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+
 .flowers {
     display: flex;
     flex-wrap: wrap;
