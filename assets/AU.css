@@ -287,10 +287,9 @@ section {
 }
 
 .insta-feed {
-  width: 40%;
   display: flex;
   justify-content: center;
-  padding-left: 110px;
+  padding-left: 16px;
   flex-direction: column;
 }
 
@@ -324,7 +323,7 @@ section {
     width: 100%;
   }
   .site-container {
-    width: 100%;
+    width: 69%;
   }
 
   .grid-gallery {
@@ -334,8 +333,8 @@ section {
   }
 
   .grid-gallery img {
-    /* width: auto; */
     margin-left: 0;
+    width: 100%;
   }
 
   .ourStoy {
@@ -381,7 +380,8 @@ section {
 
   .container img {
     width: 100%;
-    margin-bottom: -90px;
+    margin-bottom: -133px;
+    margin-top: 40px;
   }
 
   .text h1 {
