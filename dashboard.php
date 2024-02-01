@@ -23,7 +23,19 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete_flower' && isset($_GET
     $flowerId = $_GET['flower_id'];
     $flowers->deleteFlower($flowerId);
 }
+if (isset($_POST['update_flower'])) {
+    $flowerId = $_POST['flower_id'];
+    $flowerName = $_POST['editFlowerName'];
+    $price = $_POST['editPrice'];
+    $category = $_POST['editCategory'];
+    $imageData = $_FILES['editImageFile']['name'];
 
+
+    $flowers->updateFlower($flowerId, $flowerName, $price, $category, $imageData);
+    header("Location: dashboard.php");
+    exit();
+
+}
 if ($_SESSION['role'] === 'admin') {
     if (isset($_GET['action']) && isset($_GET['user_id'])) {
         $action = $_GET['action'];
@@ -55,7 +67,7 @@ if ($_SESSION['role'] === 'admin') {
     $allUsers = $user->getAllUsers();
 
     echo '<h1 class="titulli">User Dashboard</h1>';
-    
+    echo '<div class="all-users">';
     foreach ($allUsers as $currentUser):
         ?>
         <div class="permbjtja-dashboard">
@@ -73,20 +85,9 @@ if ($_SESSION['role'] === 'admin') {
         <hr class="hr" />
         <?php
     endforeach;
+    echo'</div>';
 }
-if (isset($_POST['update_flower'])) {
-    $flowerId = $_POST['flower_id'];
-    $flowerName = $_POST['editFlowerName'];
-    $price = $_POST['editPrice'];
-    $category = $_POST['editCategory'];
-    $imageData = $_FILES['editImageFile']['name'];
 
-
-    $flowers->updateFlower($flowerId, $flowerName, $price, $category, $imageData);
-    header("Location: dashboard.php");
-    exit;
-
-}
 ?>
 
 <h1 class="titulli">My flowers</h1>
@@ -134,6 +135,7 @@ if ($_SESSION['role'] === 'admin') {
     ?>
     <h1 class="titulli">Contacts</h1>
     <?php
+     echo '<div class="all-users">';
     foreach ($contact_entries as $contacts):
         ?>
         <div class="permbjtja-dashboard">
@@ -149,11 +151,12 @@ if ($_SESSION['role'] === 'admin') {
             <p class="permbajtja">
                 <?= $contacts["submission_date"] ?>
             </p>
-            <a href="?action=delete_contact&contact_id=<?= $contacts['id'] ?>" class="delete-contacti">Delete</a>
+            <a href="?action=delete_contact&contact_id=<?= $contacts['id'] ?>" class="delete">Delete</a>
         </div>
         <hr class="hr" />
         <?php
     endforeach;
+    echo'</div>';
 }
 include("footer.php");
 ?>
@@ -182,6 +185,9 @@ include("footer.php");
         </form>
     </div>
 </div>
+<?php
+
+?>
 <script>
     function openModal(flowerId, flowerName, price, category, image) {
         document.getElementById('editFlowerId').value = flowerId;

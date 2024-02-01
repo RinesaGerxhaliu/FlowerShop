@@ -5,13 +5,27 @@
 }
 
 .permbjtja-dashboard {
-    width: 30%;
-    margin: 30px auto;
-    padding: 15px;
+    width: 25%;
+    margin: 30px;
+    padding: 15px ;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     background-color: #f9f9f9;
     text-align: center;
+}
+
+.delete{
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.all-users{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 50px;
+    justify-content: center;
 }
 
 .emri {
@@ -22,7 +36,7 @@
 
 .user-delete{
     text-decoration: none;
-    padding: 10px 70px;
+    padding: 10px 80px;
     text-align: center;
 }
 
