@@ -55,6 +55,7 @@ if ($_SESSION['role'] === 'admin') {
     $allUsers = $user->getAllUsers();
 
     echo '<h1 class="titulli">User Dashboard</h1>';
+    
     foreach ($allUsers as $currentUser):
         ?>
         <div class="permbjtja-dashboard">
@@ -64,8 +65,10 @@ if ($_SESSION['role'] === 'admin') {
             <p class="permbajtja">
                 <?= $currentUser["email"] ?>
             </p>
-            <a href="?action=edit&user_id=<?= $currentUser['id'] ?>">Edit</a>
-            <a href="?action=delete&user_id=<?= $currentUser['id'] ?>">Delete</a>
+            <div class="user-delete">
+            <a href="?action=edit&user_id=<?= $currentUser['id'] ?>" class="editi">Edit</a>
+            <a href="?action=delete&user_id=<?= $currentUser['id'] ?>" class="delete">Delete</a>
+            </div>
         </div>
         <hr class="hr" />
         <?php
@@ -146,7 +149,7 @@ if ($_SESSION['role'] === 'admin') {
             <p class="permbajtja">
                 <?= $contacts["submission_date"] ?>
             </p>
-            <a href="?action=delete_contact&contact_id=<?= $contacts['id'] ?>">Delete</a>
+            <a href="?action=delete_contact&contact_id=<?= $contacts['id'] ?>" class="delete-contacti">Delete</a>
         </div>
         <hr class="hr" />
         <?php

@@ -6,17 +6,45 @@
 
 .permbjtja-dashboard {
     width: 30%;
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 15px;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     background-color: #f9f9f9;
+    text-align: center;
 }
 
 .emri {
-    margin: 0;
+    margin: 10px 10px;
     font-size: 20px;
     color: #333;
+}
+
+.user-delete{
+    text-decoration: none;
+    padding: 10px 70px;
+    text-align: center;
+}
+
+.user-delete a{
+    padding: 0 20px;
+    text-decoration: none;
+    font-size: 20px;
+    /* color: red; */
+}
+
+.editi{
+    color: blue;
+}
+
+.delete{
+    color: red;
+}
+
+.delete-contacti{
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .permbajtja {

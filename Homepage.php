@@ -40,7 +40,7 @@ $firstFourFlowers = $flower->getFirstFourFlowers();
     </div>
 
     <div class="visit-bestsellers">
-        <a href="ShopPage.html" class="bestsellers-button">SHOP ALL BEST SELLERS</a>
+        <a href="ShopPage.php" class="bestsellers-button">SHOP ALL BEST SELLERS</a>
     </div>
 
     <div class="site-aboutUs">
