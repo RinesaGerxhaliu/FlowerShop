@@ -309,12 +309,7 @@ section {
 }
 
 @media only screen and (max-width: 600px) {
-  .mrenafooter {
-    flex-direction: column;
-    margin: 0;
-    padding: 20px;
-  }
-
+ 
   .section-about {
     flex-direction: column;
     margin: 0;

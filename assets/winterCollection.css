@@ -91,12 +91,7 @@
   }
 
   @media only screen and (max-width: 600px) {
-    .mrenafooter{
-        flex-direction: column;
-        margin: 0;
-        padding: 20px;
-    }
-
+    
     .mbiheader {
       font-size: 20px;
       margin-right: 0;
@@ -107,10 +102,6 @@
       /* margin: 0 10px; */
       margin: 20px 30px;
 
-    }
-  
-    .mrenafooter {
-      flex-direction: column;
     }
   
     .collection-winterC {

@@ -133,7 +133,7 @@ $firstFourFlowers = $flower->getFirstFourFlowers();
                     </div>
 
                     <div class="images-c">
-                        <img src="./images/foto-12.png" alt="foto-9">
+                    <img src="./images/foto-12.png" alt="foto-9">
                     </div>
 
                     <div class="images-c">
