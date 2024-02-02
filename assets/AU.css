@@ -240,7 +240,6 @@ section {
 
 #paragrafet-AU{
   font-size: 20px;
-  /* margin: 5px 0; */
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(112, 111, 111);
 }
@@ -250,18 +249,16 @@ section {
   height: 150%;
 }
 .grid-gallery {
-  /* margin: 2%; */
   padding: 22px;
   margin-left: 107px;
 }
 .grid-gallery img {
   padding: 10px;
-  /* margin: 2%; */
   border-radius: 4px;
   border: 2px solid rgb(254, 244, 232);
   width: 20%;
   height: 250px;
-  /* margin-left: 60px; */
+  
 }
 .grid-gallery img:hover {
   border: 2px solid rgb(254, 244, 232);
@@ -307,6 +304,15 @@ section {
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
 }
+@media only screen and (max-width: 700px) {
+  .container{
+    flex-direction: column;
+  }
+
+  .container img{
+    width: 100%;
+  }
+}
 
 @media only screen and (max-width: 600px) {
  
@@ -329,7 +335,7 @@ section {
 
   .grid-gallery img {
     margin-left: 0;
-    width: 100%;
+    width: 90%;
   }
 
   .ourStoy {

@@ -11,7 +11,6 @@
             <a href="">Events & Corporate</a>
             <a href="">Contact Us</a>
             <a href="">About Us</a>
-
         </div>
 
         <div class="footercenter-2">

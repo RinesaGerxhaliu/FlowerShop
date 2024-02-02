@@ -1,12 +1,10 @@
 .firstImage{
     max-width: 100%;
-    
 }
 
 .firstImage img{
     width: 100%;
     height: 70%;
-    
 }
 
   .collection-fotot {
@@ -50,7 +48,7 @@
 
   .imageInside{
     width: 30%;
-    /* margin: 70px 40px; */
+   
   }
 
   .OrderFlowers img{
@@ -74,7 +72,6 @@
 
   .paragrafat{
     display: flex;
-    /* justify-content: space-between; */
     flex-direction: row;
     font-size: 22px;
     margin: 80px;
@@ -99,7 +96,6 @@
   
     .collection-fotot {
       flex-direction: column;
-      /* margin: 0 10px; */
       margin: 20px 30px;
 
     }

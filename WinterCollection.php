@@ -44,6 +44,8 @@ $flowersByCategoryWinter = $flowers->getFlowersByCategory("winter_collection");
         <?php endforeach; ?>
     </div>
 
+    <hr class="hrline">
+
     <div class="OrderFlowers" style="pading: 85px!important;">
 
         <div class="imageInside" style="margin-top: 80px; padding-right: 40px !important;">

@@ -9,7 +9,7 @@ class ContactForm
     {
         $this->db = DatabaseConnection::getInstance()->getConnection();
     }
-
+    
     public function handleFormSubmission()
     {
         if ($_SERVER["REQUEST_METHOD"] === "POST") {

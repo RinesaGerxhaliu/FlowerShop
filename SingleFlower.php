@@ -13,17 +13,19 @@ if (isset($_GET['flower_id'])) {
     $flowerDetails = $flowers->getFlowerById($flowerId);
 
     if ($flowerDetails) {
-        ?>
+       ?>
         <div class="flower-details">
             <h1 class="titullii">
                 <?= $flowerDetails['flower_name'] ?>
             </h1>
+
             <img class="flower-imgg" src="./images/<?= $flowerDetails['image'] ?>" alt="<?= $flowerDetails['flower_name'] ?>">
+            
             <p id="cmimi-lule">$
                 <?= $flowerDetails['price'] ?>
             </p>
         </div>
-        <?php
+       <?php
     } else {
         echo "<p>Flower not found!</p>";
     }

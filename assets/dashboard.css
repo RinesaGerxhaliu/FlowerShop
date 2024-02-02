@@ -44,7 +44,6 @@
     padding: 0 20px;
     text-decoration: none;
     font-size: 20px;
-    /* color: red; */
 }
 
 .editi{
@@ -138,5 +137,8 @@
       margin: 46px -1px; 
     }
 
-    
+    .permbjtja-dashboard{
+        margin: 0;
+        width: 100%;
+    }
   }

@@ -32,8 +32,6 @@ $flowersByCategoryDried = $flowers->getFlowersByCategory("dried_flowers_collecti
         <button class="next" onclick="nextSlide()">&#10095;</button>
     </div>
 
-
-
     <div class="collection">
         <p>Best Sellers Collection</p>
     </div>
