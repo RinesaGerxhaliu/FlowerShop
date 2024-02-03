@@ -45,7 +45,7 @@ if ($_SESSION['role'] === 'admin') {
             $userToEdit = $user->getUserById($userId);
             ?>
             <h1 class="titulli">Edit User</h1>
-            <form method="post" action="?action=update&user_id=<?= $userId ?>">
+            <form method="post" action="?action=update&user_id=<?= $userId ?>" class="forma-editi">
                 <label for="new_username">New Username:</label>
                 <input type="text" name="new_username" value="<?= $userToEdit["username"] ?>">
                 <label for="new_email">New Email:</label>
