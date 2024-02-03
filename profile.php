@@ -37,7 +37,7 @@ if ($_SESSION['logged_in']) {
                 <input type="email" class="inputi" name="new_email" value="<?= $userToEdit["email"] ?>">
                 <label for="new_password" class="labelat">New Password:</label>
                 <input type="password" class="inputi" name="new_password">
-                <input type="submit1" class="submit1" name="update_user" value="Update Profile">
+                <input type="submit" class="submit1" name="update_user" value="Update Profile">
             </form>
         </div>
 
