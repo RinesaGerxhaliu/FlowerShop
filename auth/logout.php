@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-include("inc/user.php");
-include("inc/db_connection.php");
+include("auth/user.php");
+include("auth/db_connection.php");
 $dbConnection = DatabaseConnection::getInstance();
 $conn = $dbConnection->getConnection();
 

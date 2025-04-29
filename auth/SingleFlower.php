@@ -1,7 +1,7 @@
 <?php
-include("header.php");
-include("inc/flowers.php");
-include("inc/db_connection.php");
+include("pages/header.php");
+include("auth/flowers.php");
+include("auth/db_connection.php");
 
 $dbConnection = DatabaseConnection::getInstance();
 $conn = $dbConnection->getConnection();

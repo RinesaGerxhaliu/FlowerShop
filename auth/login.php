@@ -1,8 +1,8 @@
 <?php
 
-include("header.php");
-include("inc/user.php");
-include("inc/db_connection.php");
+include("pages/header.php");
+include("auth/user.php");
+include("auth/db_connection.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = htmlspecialchars($_POST['username']);

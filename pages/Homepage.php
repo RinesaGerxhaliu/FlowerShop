@@ -1,7 +1,7 @@
 <?php
-include("inc/db_connection.php");
-include("inc/flowers.php");
-include("header.php");
+include("auth/db_connection.php");
+include("auth/flowers.php");
+include("pages/header.php");
 
 $flower = new Flower();
 $firstFourFlowers = $flower->getFirstFourFlowers();

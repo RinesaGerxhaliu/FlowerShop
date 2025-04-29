@@ -1,6 +1,6 @@
 <?php
-include("header.php");
-include("inc/contact_form.php");
+include("pages/header.php");
+include("auth/contact_form.php");
 
 $contactForm = new ContactForm();
 

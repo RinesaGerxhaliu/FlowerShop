@@ -1,8 +1,8 @@
 <?php
-include("header.php");
-include("inc/contact_form.php");
-include("inc/user.php");
-include("inc/flowers.php");
+include("pages/header.php");
+include("auth/contact_form.php");
+include("auth/user.php");
+include("auth/flowers.php");
 
 $dbConnection = DatabaseConnection::getInstance();
 $conn = $dbConnection->getConnection();
